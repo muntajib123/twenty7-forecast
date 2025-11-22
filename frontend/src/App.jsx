@@ -13,8 +13,13 @@ import jsPDF from "jspdf";
 import Header from "./components/Header";
 import HistoricalPage from "./pages/HistoricalPage"; // NEW import
 
-// Use API base with /api prefix
-const API_BASE = "http://localhost:8000/api";
+// Read API base from Vite env. Falls back to localhost for dev.
+const VITE_API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+// Ensure no trailing slash and add /api prefix
+const API_BASE = VITE_API_BASE.replace(/\/$/, '') + '/api';
+
+console.log('VITE_API_BASE_URL (build):', import.meta.env.VITE_API_BASE_URL);
+console.log('API_BASE used by client:', API_BASE);
 
 const NOAA_LATEST = "/noaa/27day/latest";
 const NOAA_LIVE   = "/noaa/27day/live";
@@ -45,11 +50,12 @@ export default function App() {
   const apPresentRef = useRef(null);
   const fPresentRef = useRef(null);
 
-  async function getJson(url) {
-    const res = await fetch(`${API_BASE}${url}`);
+  async function getJson(path) {
+    const url = `${API_BASE}${path}`;
+    const res = await fetch(url);
     if (!res.ok) {
       const text = await res.text().catch(() => "");
-      throw new Error(`GET ${url} → ${res.status}${text ? `: ${text.slice(0, 200)}...` : ""}`);
+      throw new Error(`GET ${path} → ${res.status}${text ? `: ${text.slice(0, 200)}...` : ""}`);
     }
     const ct = res.headers.get("content-type") || "";
     const bodyText = await res.text();
@@ -60,15 +66,15 @@ export default function App() {
     try {
       return JSON.parse(bodyText);
     } catch (err) {
-      throw new Error(`Invalid JSON from ${url}: ${err.message}. Response start: ${bodyText.slice(0,300)}`);
+      throw new Error(`Invalid JSON from ${path}: ${err.message}. Response start: ${bodyText.slice(0,300)}`);
     }
   }
 
-  async function getJsonWithFallback(urls) {
+  async function getJsonWithFallback(paths) {
     let lastErr;
-    for (const url of urls) {
-      try { return await getJson(url); }
-      catch (e) { lastErr = e; console.warn(`Fallback: ${url} failed →`, e.message); }
+    for (const p of paths) {
+      try { return await getJson(p); }
+      catch (e) { lastErr = e; console.warn(`Fallback: ${p} failed →`, e.message); }
     }
     throw lastErr;
   }
@@ -126,7 +132,7 @@ export default function App() {
         : dayjs().add(1, "day");
 
       try {
-        // CHANGED: use 'trend' (variable) instead of 'mean7' (flat)
+        // prefer trend mode if available
         const beyond = await getJson(`${PREDICT_BEYOND}?mode=trend`);
         const kpH = Array.isArray(beyond?.horizon) ? beyond.horizon.slice(0, FUTURE_LEN) : [];
         const apH =
