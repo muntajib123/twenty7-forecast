@@ -1,0 +1,113 @@
+/* 🌌 Global Dark Space Theme */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  background:
+    radial-gradient(1200px 500px at 80% -50%, rgba(106,130,251,0.15), transparent),
+    radial-gradient(800px 300px at 10% 10%, rgba(112,225,245,0.12), transparent),
+    linear-gradient(180deg, #0b1021 0%, #0a0f1a 100%);
+  color-scheme: dark;
+  color: #E6F1FF;
+  overflow-x: hidden;
+}
+
+/* 🌠 Subtle space grid pattern overlay */
+.space-grid {
+  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: -10px -10px;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 🛰️ Smooth scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #004080, #0073e6);
+  border-radius: 4px;
+}
+
+/* 💡 Paper / Card Glow */
+.MuiPaper-root {
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: all 0.25s ease-in-out;
+}
+.MuiPaper-root:hover {
+  box-shadow: 0 10px 30px rgba(0, 115, 230, 0.25);
+}
+
+/* ✨ Typography Enhancements */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255,255,255,0.15);
+}
+.MuiTypography-overline {
+  letter-spacing: 0.1em;
+}
+
+/* 🚀 Buttons */
+.MuiButton-contained {
+  background: linear-gradient(90deg, #004080 0%, #0073e6 100%);
+  border-radius: 10px;
+  text-transform: none;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.25s ease-in-out;
+}
+.MuiButton-contained:hover {
+  box-shadow: 0 0 12px rgba(0,115,230,0.6);
+  background: linear-gradient(90deg, #0066cc 0%, #0099ff 100%);
+}
+
+/* 🪐 Charts container styling */
+.chart-box {
+  border-radius: 16px;
+  background: rgba(20, 25, 45, 0.85);
+  box-shadow: 0 0 20px rgba(0, 115, 230, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+.chart-box:hover {
+  transform: scale(1.01);
+}
+
+/* 🧭 Tables */
+.MuiTable-root {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.MuiTableHead-root {
+  background: rgba(255,255,255,0.08);
+}
+.MuiTableCell-root {
+  color: #E6F1FF !important;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* 🌙 Animations for fade-ins */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🌍 Responsive tweaks */
+@media (max-width: 768px) {
+  .MuiTypography-h5 {
+    font-size: 1.4rem !important;
+  }
+  .MuiButton-root {
+    padding: 6px 12px !important;
+  }
+}

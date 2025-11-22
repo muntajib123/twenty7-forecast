@@ -1,0 +1,17 @@
+/* Full-width, no constraints */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0b1021; /* base; your App adds gradients */
+  color-scheme: dark;
+}
+
+/* Remove Vite template centering/limits */
+#root {
+  display: block;
+}
