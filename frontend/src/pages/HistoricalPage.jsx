@@ -1,14 +1,13 @@
 // frontend/src/pages/HistoricalPage.jsx
-// Uploaded raw file (for your reference): /mnt/data/c8797b69-131f-4cfb-8eab-9296b66163ef.txt
-
 import React, { useEffect, useState } from "react";
 import {
   Box, Button, TextField, Stack, Paper,
   Grid, Card, CardContent, Typography
 } from "@mui/material";
 
-// Same API base as App.jsx
-const API_BASE = "http://localhost:8000/api";
+// Use Vite env var in production; fall back to localhost for local dev.
+const VITE_API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+const API_BASE = VITE_API_BASE.replace(/\/$/, "") + "/api";
 
 function formatVal(v) {
   if (v == null) return "—";
@@ -34,7 +33,11 @@ export default function HistoricalPage() {
       const url = `${API_BASE}/historical${params.toString() ? "?" + params.toString() : ""}`;
       const res = await fetch(url);
 
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      if (!res.ok) {
+        // read response text for better error message if provided
+        const text = await res.text().catch(() => "");
+        throw new Error(`HTTP ${res.status}${text ? `: ${text.slice(0,300)}` : ""}`);
+      }
 
       const data = await res.json();
       setRows(Array.isArray(data) ? data : []);
@@ -50,8 +53,6 @@ export default function HistoricalPage() {
 
   return (
     <Box sx={{ p: 3 }}>
-
-      {/* Correct heading */}
       <Typography
         variant="h5"
         sx={{
@@ -64,7 +65,6 @@ export default function HistoricalPage() {
         Historical 27-Day
       </Typography>
 
-      {/* Filter Box */}
       <Paper sx={{ p: 2, mb: 3 }}>
         <Stack
           direction={{ xs: "column", sm: "row" }}
@@ -100,6 +100,7 @@ export default function HistoricalPage() {
               const params = new URLSearchParams();
               if (start) params.append("start", start);
               if (end) params.append("end", end);
+              // use API_BASE (env-backed) for CSV download
               window.location.href = `${API_BASE}/historical?${params.toString()}&format=csv`;
             }}
           >
@@ -108,14 +109,12 @@ export default function HistoricalPage() {
         </Stack>
       </Paper>
 
-      {/* Errors */}
       {err && (
         <Typography color="error" sx={{ mb: 2, textAlign: "center" }}>
           {err}
         </Typography>
       )}
 
-      {/* Card Grid */}
       <Grid container spacing={2}>
         {rows.map((r) => (
           <Grid item xs={12} sm={6} md={4} lg={3} key={r.date}>
