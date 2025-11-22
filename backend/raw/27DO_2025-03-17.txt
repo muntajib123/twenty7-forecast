@@ -1,0 +1,2848 @@
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2019 Jan 07 0558 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2019-01-07
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2019 Jan 07      72           8          3
+2019 Jan 08      70           5          2
+2019 Jan 09      70           5          2
+2019 Jan 10      70           5          2
+2019 Jan 11      70           5          2
+2019 Jan 12      70           5          2
+2019 Jan 13      70           5          2
+2019 Jan 14      70           5          2
+2019 Jan 15      70           5          2
+2019 Jan 16      70          12          4
+2019 Jan 17      70           5          2
+2019 Jan 18      70           5          2
+2019 Jan 19      70           5          2
+2019 Jan 20      71           5          2
+2019 Jan 21      71           5          2
+2019 Jan 22      71           5          2
+2019 Jan 23      71           5          2
+2019 Jan 24      71          20          5
+2019 Jan 25      71          12          4
+2019 Jan 26      71           8          3
+2019 Jan 27      71           5          2
+2019 Jan 28      71           5          2
+2019 Jan 29      71           5          2
+2019 Jan 30      71           5          2
+2019 Jan 31      71          10          3
+2019 Feb 01      71          15          4
+2019 Feb 02      71          12          4
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2019 Mar 25 0105 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2019-03-25
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2019 Mar 25      73          15          4
+2019 Mar 26      71           8          3
+2019 Mar 27      70          12          4
+2019 Mar 28      70          12          4
+2019 Mar 29      70           8          3
+2019 Mar 30      70           8          3
+2019 Mar 31      70           5          2
+2019 Apr 01      70           5          2
+2019 Apr 02      70           8          3
+2019 Apr 03      70           8          3
+2019 Apr 04      70           5          2
+2019 Apr 05      70           5          2
+2019 Apr 06      70           5          2
+2019 Apr 07      71           5          2
+2019 Apr 08      74           5          2
+2019 Apr 09      75           5          2
+2019 Apr 10      75           5          2
+2019 Apr 11      75           5          2
+2019 Apr 12      75          15          4
+2019 Apr 13      75          10          3
+2019 Apr 14      75           5          2
+2019 Apr 15      75           5          2
+2019 Apr 16      75           5          2
+2019 Apr 17      75           5          2
+2019 Apr 18      75           5          2
+2019 Apr 19      74           5          2
+2019 Apr 20      72           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2019 Apr 01 0125 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2019-04-01
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2019 Apr 01      70          10          3
+2019 Apr 02      70           8          3
+2019 Apr 03      70          10          3
+2019 Apr 04      70          10          3
+2019 Apr 05      70           8          3
+2019 Apr 06      70           8          3
+2019 Apr 07      70          10          3
+2019 Apr 08      70           5          2
+2019 Apr 09      70           5          2
+2019 Apr 10      70           5          2
+2019 Apr 11      69           5          2
+2019 Apr 12      69          15          4
+2019 Apr 13      69           8          3
+2019 Apr 14      70           5          2
+2019 Apr 15      70           5          2
+2019 Apr 16      70           5          2
+2019 Apr 17      70           5          2
+2019 Apr 18      70           5          2
+2019 Apr 19      70           5          2
+2019 Apr 20      70           5          2
+2019 Apr 21      70           5          2
+2019 Apr 22      70           5          2
+2019 Apr 23      69           5          2
+2019 Apr 24      68          10          3
+2019 Apr 25      69           8          3
+2019 Apr 26      69           5          2
+2019 Apr 27      70           8          3
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2019 Nov 04 0117 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2019-11-04
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2019 Nov 04      70           5          2
+2019 Nov 05      70           8          3
+2019 Nov 06      70          10          4
+2019 Nov 07      68           8          3
+2019 Nov 08      69           5          2
+2019 Nov 09      68           5          2
+2019 Nov 10      67           5          2
+2019 Nov 11      67           5          2
+2019 Nov 12      67           5          2
+2019 Nov 13      67           5          2
+2019 Nov 14      67           5          2
+2019 Nov 15      67           5          2
+2019 Nov 16      67           5          2
+2019 Nov 17      67           5          2
+2019 Nov 18      67           5          2
+2019 Nov 19      67           5          2
+2019 Nov 20      68          15          4
+2019 Nov 21      70          25          5
+2019 Nov 22      71          18          4
+2019 Nov 23      71          12          4
+2019 Nov 24      71          10          4
+2019 Nov 25      71           8          3
+2019 Nov 26      71           8          3
+2019 Nov 27      71           5          2
+2019 Nov 28      71           5          2
+2019 Nov 29      71           5          2
+2019 Nov 30      71           5          2
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2020 Apr 20 0123 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2020-04-20
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2020 Apr 20      69          12          4
+2020 Apr 21      69          10          3
+2020 Apr 22      69           8          3
+2020 Apr 23      69          10          3
+2020 Apr 24      69           5          2
+2020 Apr 25      69           5          2
+2020 Apr 26      69           5          2
+2020 Apr 27      69          10          4
+2020 Apr 28      69           5          2
+2020 Apr 29      69           5          2
+2020 Apr 30      69           8          3
+2020 May 01      69           5          2
+2020 May 02      69           5          2
+2020 May 03      69           5          2
+2020 May 04      69           5          2
+2020 May 05      69          12          4
+2020 May 06      69           5          2
+2020 May 07      69           5          2
+2020 May 08      69           5          2
+2020 May 09      69           5          2
+2020 May 10      69           5          2
+2020 May 11      69           5          2
+2020 May 12      69           5          2
+2020 May 13      69           5          2
+2020 May 14      69           5          2
+2020 May 15      69           5          2
+2020 May 16      69           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2020 May 18 0322 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2020-05-18
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2020 May 18      70           5          3
+2020 May 19      70           8          3
+2020 May 20      70           8          3
+2020 May 21      70           5          3
+2020 May 22      70           5          2
+2020 May 23      70           5          2
+2020 May 24      70           5          2
+2020 May 25      70           5          2
+2020 May 26      70           5          2
+2020 May 27      70           5          2
+2020 May 28      70           5          2
+2020 May 29      70           5          2
+2020 May 30      70           5          2
+2020 May 31      70           5          2
+2020 Jun 01      70           5          2
+2020 Jun 02      70           5          2
+2020 Jun 03      70           5          2
+2020 Jun 04      70           5          2
+2020 Jun 05      70           5          2
+2020 Jun 06      70           5          2
+2020 Jun 07      70           5          2
+2020 Jun 08      70           5          2
+2020 Jun 09      70           5          2
+2020 Jun 10      70           5          2
+2020 Jun 11      70           5          2
+2020 Jun 12      70           5          2
+2020 Jun 13      70           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2020 Jun 01 2123 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2020-06-01
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2020 Jun 01      71           5          2
+2020 Jun 02      71           5          2
+2020 Jun 03      71           5          2
+2020 Jun 04      71           5          2
+2020 Jun 05      71           5          2
+2020 Jun 06      71           5          2
+2020 Jun 07      71           5          2
+2020 Jun 08      70           5          2
+2020 Jun 09      70           5          2
+2020 Jun 10      70           5          2
+2020 Jun 11      70           5          2
+2020 Jun 12      70           5          2
+2020 Jun 13      70           5          2
+2020 Jun 14      70           5          2
+2020 Jun 15      70           5          2
+2020 Jun 16      70           5          2
+2020 Jun 17      70           5          2
+2020 Jun 18      70           5          2
+2020 Jun 19      70           5          2
+2020 Jun 20      70           5          2
+2020 Jun 21      71           5          2
+2020 Jun 22      71           5          2
+2020 Jun 23      71           5          2
+2020 Jun 24      71           5          2
+2020 Jun 25      71           5          2
+2020 Jun 26      71           5          2
+2020 Jun 27      71           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2020 Jul 13 0246 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2020-07-13
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2020 Jul 13      68           8          3
+2020 Jul 14      68          12          4
+2020 Jul 15      68           8          3
+2020 Jul 16      68           5          2
+2020 Jul 17      68           5          2
+2020 Jul 18      68           5          2
+2020 Jul 19      68           5          2
+2020 Jul 20      68           5          2
+2020 Jul 21      68           5          2
+2020 Jul 22      68           5          2
+2020 Jul 23      68           5          2
+2020 Jul 24      68           5          2
+2020 Jul 25      69           5          2
+2020 Jul 26      69           5          2
+2020 Jul 27      69           5          2
+2020 Jul 28      69           5          2
+2020 Jul 29      69           5          2
+2020 Jul 30      69           5          2
+2020 Jul 31      69           8          3
+2020 Aug 01      69          10          3
+2020 Aug 02      68           5          2
+2020 Aug 03      68           5          2
+2020 Aug 04      68           5          2
+2020 Aug 05      68           5          2
+2020 Aug 06      68           5          2
+2020 Aug 07      68           5          2
+2020 Aug 08      68           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2020 Sep 21 0147 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2020-09-21
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2020 Sep 21      70           5          2
+2020 Sep 22      70           5          2
+2020 Sep 23      70          10          3
+2020 Sep 24      70          12          4
+2020 Sep 25      70          16          4
+2020 Sep 26      70          12          3
+2020 Sep 27      70          28          5
+2020 Sep 28      70          18          4
+2020 Sep 29      70          10          3
+2020 Sep 30      70           5          2
+2020 Oct 01      70           5          2
+2020 Oct 02      70           5          2
+2020 Oct 03      70           5          2
+2020 Oct 04      70           5          2
+2020 Oct 05      70           5          2
+2020 Oct 06      70           5          2
+2020 Oct 07      70           5          2
+2020 Oct 08      70           5          2
+2020 Oct 09      70           5          2
+2020 Oct 10      70           5          2
+2020 Oct 11      70          10          3
+2020 Oct 12      70           5          2
+2020 Oct 13      70           5          2
+2020 Oct 14      70           5          2
+2020 Oct 15      70           5          2
+2020 Oct 16      70           5          2
+2020 Oct 17      70           5          2
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2020 Oct 12 0041 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2020-10-12
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2020 Oct 12      73           5          2
+2020 Oct 13      73           5          2
+2020 Oct 14      73           5          2
+2020 Oct 15      72           5          2
+2020 Oct 16      71           5          2
+2020 Oct 17      71           5          2
+2020 Oct 18      70           5          2
+2020 Oct 19      70           5          2
+2020 Oct 20      70          10          4
+2020 Oct 21      70          18          5
+2020 Oct 22      70          20          5
+2020 Oct 23      70          24          5
+2020 Oct 24      70          22          5
+2020 Oct 25      70          30          6
+2020 Oct 26      70          16          4
+2020 Oct 27      70          14          4
+2020 Oct 28      72          10          4
+2020 Oct 29      72           8          3
+2020 Oct 30      72           5          2
+2020 Oct 31      73           5          2
+2020 Nov 01      73           5          2
+2020 Nov 02      73           5          2
+2020 Nov 03      73           5          2
+2020 Nov 04      73           5          2
+2020 Nov 05      73           5          2
+2020 Nov 06      73           5          2
+2020 Nov 07      73           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2020 Nov 09 0341 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2020-11-09
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2020 Nov 09      90           5          2
+2020 Nov 10      88           5          2
+2020 Nov 11      86           5          2
+2020 Nov 12      84           8          3
+2020 Nov 13      82          10          3
+2020 Nov 14      82           5          2
+2020 Nov 15      80           5          2
+2020 Nov 16      78           5          2
+2020 Nov 17      78          10          3
+2020 Nov 18      78           5          2
+2020 Nov 19      78          10          4
+2020 Nov 20      78          15          5
+2020 Nov 21      78          12          4
+2020 Nov 22      78          15          5
+2020 Nov 23      78           8          3
+2020 Nov 24      78          10          4
+2020 Nov 25      78          12          4
+2020 Nov 26      80           5          2
+2020 Nov 27      82           5          2
+2020 Nov 28      86           5          2
+2020 Nov 29      86           5          2
+2020 Nov 30      86           5          2
+2020 Dec 01      86           5          2
+2020 Dec 02      86           5          2
+2020 Dec 03      86           8          3
+2020 Dec 04      86           8          3
+2020 Dec 05      86           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2020 Nov 30 0517 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2020-11-30
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2020 Nov 30     115           5          2
+2020 Dec 01     113          12          4
+2020 Dec 02     113          12          4
+2020 Dec 03     113           5          2
+2020 Dec 04     110           5          2
+2020 Dec 05     105           5          2
+2020 Dec 06     103           5          2
+2020 Dec 07      95           5          2
+2020 Dec 08      95           5          2
+2020 Dec 09      92           5          2
+2020 Dec 10      88           5          2
+2020 Dec 11      85           5          2
+2020 Dec 12      85           5          2
+2020 Dec 13      82           5          2
+2020 Dec 14      82           5          2
+2020 Dec 15      82           5          2
+2020 Dec 16      82           5          2
+2020 Dec 17      85           5          2
+2020 Dec 18      90          12          4
+2020 Dec 19     100          20          5
+2020 Dec 20     105           8          3
+2020 Dec 21     105           5          2
+2020 Dec 22     108           5          2
+2020 Dec 23     110           8          3
+2020 Dec 24     110          10          3
+2020 Dec 25     110           8          3
+2020 Dec 26     115           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2020 Dec 14 0119 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2020-12-14
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2020 Dec 14      82           5          2
+2020 Dec 15      83           5          2
+2020 Dec 16      83           5          2
+2020 Dec 17      84           8          3
+2020 Dec 18      85           5          2
+2020 Dec 19      85           5          2
+2020 Dec 20      85          12          4
+2020 Dec 21      85          15          4
+2020 Dec 22      85          12          4
+2020 Dec 23      85          10          3
+2020 Dec 24      85           8          3
+2020 Dec 25      86           5          2
+2020 Dec 26      86           5          2
+2020 Dec 27      86           5          2
+2020 Dec 28      86           5          2
+2020 Dec 29      85           5          2
+2020 Dec 30      84           5          2
+2020 Dec 31      83           5          2
+2021 Jan 01      82           5          2
+2021 Jan 02      82           5          2
+2021 Jan 03      82           5          2
+2021 Jan 04      82           5          2
+2021 Jan 05      82          10          3
+2021 Jan 06      82          10          3
+2021 Jan 07      82           5          2
+2021 Jan 08      82           5          2
+2021 Jan 09      82           5          2
+
+
+========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2021 Jan 11 0124 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2021-01-11
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2021 Jan 11      74           8          3
+2021 Jan 12      74           5          2
+2021 Jan 13      74           5          2
+2021 Jan 14      74           5          2
+2021 Jan 15      74           5          2
+2021 Jan 16      74           5          2
+2021 Jan 17      74          10          4
+2021 Jan 18      76          10          4
+2021 Jan 19      78          10          4
+2021 Jan 20      78          10          4
+2021 Jan 21      78           5          2
+2021 Jan 22      78           5          2
+2021 Jan 23      78           5          2
+2021 Jan 24      78           5          2
+2021 Jan 25      78           8          3
+2021 Jan 26      78           8          3
+2021 Jan 27      78           5          2
+2021 Jan 28      77           5          2
+2021 Jan 29      77           5          2
+2021 Jan 30      77           5          2
+2021 Jan 31      77           5          2
+2021 Feb 01      75          10          4
+2021 Feb 02      75          10          4
+2021 Feb 03      75           5          2
+2021 Feb 04      75           5          2
+2021 Feb 05      75           5          2
+2021 Feb 06      75           5          2
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2021 Feb 01 0159 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2021-02-01
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2021 Feb 01      73          18          5
+2021 Feb 02      73          12          4
+2021 Feb 03      72           8          3
+2021 Feb 04      72           5          2
+2021 Feb 05      72           5          2
+2021 Feb 06      72           5          2
+2021 Feb 07      72          10          4
+2021 Feb 08      72          10          3
+2021 Feb 09      74           5          2
+2021 Feb 10      74           5          2
+2021 Feb 11      74           5          2
+2021 Feb 12      76           5          2
+2021 Feb 13      76           5          2
+2021 Feb 14      76           5          2
+2021 Feb 15      76           5          2
+2021 Feb 16      76           5          2
+2021 Feb 17      78           5          2
+2021 Feb 18      78           5          2
+2021 Feb 19      78           5          2
+2021 Feb 20      78           5          2
+2021 Feb 21      78          20          5
+2021 Feb 22      78          16          4
+2021 Feb 23      76          12          3
+2021 Feb 24      76           5          2
+2021 Feb 25      76           5          2
+2021 Feb 26      74           5          2
+2021 Feb 27      73           5          2
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2021 Mar 01 1603 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2021-03-01
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2021 Mar 01      73          18          5
+2021 Mar 02      74          15          4
+2021 Mar 03      74           8          3
+2021 Mar 04      73           5          2
+2021 Mar 05      73           5          2
+2021 Mar 06      73          15          4
+2021 Mar 07      74           5          2
+2021 Mar 08      70           5          2
+2021 Mar 09      74           5          2
+2021 Mar 10      76           5          2
+2021 Mar 11      72           5          2
+2021 Mar 12      71          15          4
+2021 Mar 13      72          10          4
+2021 Mar 14      70           5          2
+2021 Mar 15      71          15          4
+2021 Mar 16      72           8          3
+2021 Mar 17      71           5          2
+2021 Mar 18      73          18          5
+2021 Mar 19      76          20          5
+2021 Mar 20      75          20          4
+2021 Mar 21      76          18          4
+2021 Mar 22      78          12          3
+2021 Mar 23      81           8          3
+2021 Mar 24      80           5          2
+2021 Mar 25      80           5          2
+2021 Mar 26      79           5          2
+2021 Mar 27      78           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2021 Mar 15 0111 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2021-03-15
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2021 Mar 15      78          12          4
+2021 Mar 16      78           5          2
+2021 Mar 17      78           5          2
+2021 Mar 18      78           8          3
+2021 Mar 19      77          18          4
+2021 Mar 20      77          18          4
+2021 Mar 21      76          18          4
+2021 Mar 22      76          12          3
+2021 Mar 23      76           8          3
+2021 Mar 24      76           5          2
+2021 Mar 25      77           5          2
+2021 Mar 26      78           5          2
+2021 Mar 27      78           5          2
+2021 Mar 28      78          25          5
+2021 Mar 29      78          20          5
+2021 Mar 30      78          20          5
+2021 Mar 31      78          10          3
+2021 Apr 01      78           5          2
+2021 Apr 02      79          15          3
+2021 Apr 03      80           8          3
+2021 Apr 04      81           5          2
+2021 Apr 05      82           5          2
+2021 Apr 06      82           5          2
+2021 Apr 07      82           5          2
+2021 Apr 08      81          15          3
+2021 Apr 09      80          18          4
+2021 Apr 10      80          20          5
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2021 Apr 19 0151 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2021-04-19
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2021 Apr 19      78          12          4
+2021 Apr 20      75           8          3
+2021 Apr 21      75           5          2
+2021 Apr 22      72           5          2
+2021 Apr 23      70           8          3
+2021 Apr 24      70          12          4
+2021 Apr 25      70           5          2
+2021 Apr 26      70           5          2
+2021 Apr 27      68          10          3
+2021 Apr 28      68           8          3
+2021 Apr 29      68           5          2
+2021 Apr 30      68           5          2
+2021 May 01      68           5          2
+2021 May 02      68           5          2
+2021 May 03      70           5          2
+2021 May 04      72          15          4
+2021 May 05      72           5          2
+2021 May 06      72           5          2
+2021 May 07      72           5          2
+2021 May 08      72           8          3
+2021 May 09      72           5          2
+2021 May 10      75           5          2
+2021 May 11      75           8          3
+2021 May 12      75          12          4
+2021 May 13      75          20          5
+2021 May 14      75          30          5
+2021 May 15      75          15          4
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2021 Aug 23 0105 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2021-08-23
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2021 Aug 23      77           8          3
+2021 Aug 24      77           8          3
+2021 Aug 25      76          15          4
+2021 Aug 26      75          10          4
+2021 Aug 27      75           7          2
+2021 Aug 28      75           7          2
+2021 Aug 29      75           5          2
+2021 Aug 30      75           5          2
+2021 Aug 31      75           5          2
+2021 Sep 01      75           5          2
+2021 Sep 02      75           8          3
+2021 Sep 03      73          12          4
+2021 Sep 04      73           5          2
+2021 Sep 05      73           5          2
+2021 Sep 06      73           5          2
+2021 Sep 07      73           5          2
+2021 Sep 08      73           5          2
+2021 Sep 09      73           5          2
+2021 Sep 10      73           5          2
+2021 Sep 11      73          10          3
+2021 Sep 12      74           8          3
+2021 Sep 13      74           5          2
+2021 Sep 14      74           5          2
+2021 Sep 15      74           5          2
+2021 Sep 16      76           5          2
+2021 Sep 17      76           5          2
+2021 Sep 18      76           5          2
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2021 Sep 06 0143 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2021-09-06
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2021 Sep 06      90           8          3
+2021 Sep 07      90           5          2
+2021 Sep 08      90           5          2
+2021 Sep 09      90           5          2
+2021 Sep 10      92           5          2
+2021 Sep 11      90           5          2
+2021 Sep 12      85           5          2
+2021 Sep 13      85           5          2
+2021 Sep 14      85           5          2
+2021 Sep 15      85           5          2
+2021 Sep 16      85           5          2
+2021 Sep 17      85           5          2
+2021 Sep 18      85           5          2
+2021 Sep 19      88           5          2
+2021 Sep 20      88           5          2
+2021 Sep 21      88           8          3
+2021 Sep 22      88           5          2
+2021 Sep 23      86           5          2
+2021 Sep 24      90           5          2
+2021 Sep 25      90           5          2
+2021 Sep 26      90           5          2
+2021 Sep 27      90           5          2
+2021 Sep 28      90           5          2
+2021 Sep 29      88           5          2
+2021 Sep 30      88           5          2
+2021 Oct 01      88           5          2
+2021 Oct 02      88           8          3
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2021 Oct 04 0141 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2021-10-04
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2021 Oct 04      88           5          2
+2021 Oct 05      88           8          3
+2021 Oct 06      88           8          3
+2021 Oct 07      88           5          2
+2021 Oct 08      88           8          3
+2021 Oct 09      88           8          3
+2021 Oct 10      85           5          2
+2021 Oct 11      80           5          2
+2021 Oct 12      75           5          2
+2021 Oct 13      75           5          2
+2021 Oct 14      75           5          2
+2021 Oct 15      75           5          2
+2021 Oct 16      75           5          2
+2021 Oct 17      80           5          2
+2021 Oct 18      85          10          3
+2021 Oct 19      88          12          4
+2021 Oct 20      90          10          3
+2021 Oct 21      88           8          3
+2021 Oct 22      88           5          2
+2021 Oct 23      85           5          2
+2021 Oct 24      85           5          2
+2021 Oct 25      90          10          3
+2021 Oct 26     100           5          2
+2021 Oct 27      95           5          2
+2021 Oct 28      90           5          2
+2021 Oct 29      88           5          2
+2021 Oct 30      88           5          2
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2021 Oct 25 0403 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2021-10-25
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2021 Oct 25      94           5          2
+2021 Oct 26      95           5          2
+2021 Oct 27      95           8          3
+2021 Oct 28      96           8          3
+2021 Oct 29      95          10          3
+2021 Oct 30      95          10          3
+2021 Oct 31      95           5          2
+2021 Nov 01      95           5          2
+2021 Nov 02      95           5          2
+2021 Nov 03      92           5          2
+2021 Nov 04      90           5          2
+2021 Nov 05      88           5          2
+2021 Nov 06      86          12          4
+2021 Nov 07      86          10          3
+2021 Nov 08      85           8          3
+2021 Nov 09      85           5          2
+2021 Nov 10      83           5          2
+2021 Nov 11      82           5          2
+2021 Nov 12      82           5          2
+2021 Nov 13      82           5          2
+2021 Nov 14      82           5          2
+2021 Nov 15      82          10          3
+2021 Nov 16      85           8          3
+2021 Nov 17      85           5          2
+2021 Nov 18      85           5          2
+2021 Nov 19      85           5          2
+2021 Nov 20      85           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2021 Nov 08 0520 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2021-11-08
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2021 Nov 08      85           8          3
+2021 Nov 09      82           5          2
+2021 Nov 10      82           5          2
+2021 Nov 11      82           5          2
+2021 Nov 12      82           5          2
+2021 Nov 13      80           7          2
+2021 Nov 14      80           7          2
+2021 Nov 15      85          10          4
+2021 Nov 16      87           8          3
+2021 Nov 17      87           5          2
+2021 Nov 18      87           5          2
+2021 Nov 19      90           5          2
+2021 Nov 20      90           5          2
+2021 Nov 21      95           5          2
+2021 Nov 22      95           5          2
+2021 Nov 23      95           5          2
+2021 Nov 24      95           5          2
+2021 Nov 25      95           5          2
+2021 Nov 26      95           5          2
+2021 Nov 27      95           5          2
+2021 Nov 28      90          10          4
+2021 Nov 29      90          10          4
+2021 Nov 30      85           8          3
+2021 Dec 01      85           5          2
+2021 Dec 02      85           5          2
+2021 Dec 03      82           5          2
+2021 Dec 04      82           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2021 Dec 06 0224 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2021-12-06
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2021 Dec 06      82           8          3
+2021 Dec 07      80           8          3
+2021 Dec 08      80           5          2
+2021 Dec 09      80           5          2
+2021 Dec 10      82          10          3
+2021 Dec 11      82           8          3
+2021 Dec 12      82           5          2
+2021 Dec 13      80          12          4
+2021 Dec 14      80          10          3
+2021 Dec 15      82           5          2
+2021 Dec 16      85           5          2
+2021 Dec 17      85          15          5
+2021 Dec 18      85          12          4
+2021 Dec 19      87          10          3
+2021 Dec 20      87           8          3
+2021 Dec 21      87           5          2
+2021 Dec 22      87           5          2
+2021 Dec 23      86           5          2
+2021 Dec 24      86           5          2
+2021 Dec 25      86           5          2
+2021 Dec 26      86           5          2
+2021 Dec 27      86          15          5
+2021 Dec 28      84          18          5
+2021 Dec 29      82          12          4
+2021 Dec 30      82           8          3
+2021 Dec 31      82           8          3
+2022 Jan 01      82           8          3
+
+===========================================================================================================================================================================================
+
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2022 Jan 10 0129 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2022-01-10
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2022 Jan 10     102           8          3
+2022 Jan 11     102           5          2
+2022 Jan 12     105           5          2
+2022 Jan 13     110           5          2
+2022 Jan 14     110           5          2
+2022 Jan 15     115           5          2
+2022 Jan 16     115          12          5
+2022 Jan 17     120          15          4
+2022 Jan 18     120          10          3
+2022 Jan 19     120           5          2
+2022 Jan 20     120           5          2
+2022 Jan 21     120           5          2
+2022 Jan 22     120           5          2
+2022 Jan 23     120          10          3
+2022 Jan 24     120           8          3
+2022 Jan 25     110           8          3
+2022 Jan 26     100           8          3
+2022 Jan 27     100           5          2
+2022 Jan 28      95          10          3
+2022 Jan 29      90          10          3
+2022 Jan 30      85          10          3
+2022 Jan 31      85           5          2
+2022 Feb 01      85           5          2
+2022 Feb 02      95           5          2
+2022 Feb 03     105           5          2
+2022 Feb 04     100          15          5
+2022 Feb 05     100          10          3
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2022 Feb 07 0321 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2022-02-07
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2022 Feb 07     122          10          3
+2022 Feb 08     120           5          2
+2022 Feb 09     120           5          2
+2022 Feb 10     120          20          5
+2022 Feb 11     110          25          5
+2022 Feb 12     110          12          3
+2022 Feb 13     115          25          5
+2022 Feb 14     115          20          5
+2022 Feb 15     115           5          2
+2022 Feb 16     115           5          2
+2022 Feb 17     115          10          3
+2022 Feb 18     115          12          4
+2022 Feb 19     115           8          3
+2022 Feb 20     118           5          2
+2022 Feb 21     120          10          3
+2022 Feb 22     120           8          3
+2022 Feb 23     120           5          2
+2022 Feb 24     125           8          3
+2022 Feb 25     125          12          4
+2022 Feb 26     120           8          3
+2022 Feb 27     120           8          3
+2022 Feb 28     120           5          2
+2022 Mar 01     120           5          2
+2022 Mar 02     120           5          2
+2022 Mar 03     120          12          4
+2022 Mar 04     120          10          3
+2022 Mar 05     115          15          4
+
+
+=========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2022 Feb 21 0202 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2022-02-21
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2022 Feb 21      96          12          4
+2022 Feb 22     102          10          3
+2022 Feb 23     102           8          3
+2022 Feb 24     105           5          2
+2022 Feb 25     103           5          2
+2022 Feb 26     103           5          2
+2022 Feb 27     103           5          2
+2022 Feb 28     105           5          2
+2022 Mar 01     103           5          2
+2022 Mar 02     103           5          2
+2022 Mar 03     105          18          5
+2022 Mar 04     103          15          5
+2022 Mar 05     103          10          3
+2022 Mar 06     100           8          3
+2022 Mar 07      98           5          2
+2022 Mar 08      98           5          2
+2022 Mar 09      95           5          2
+2022 Mar 10      95           5          2
+2022 Mar 11      95          15          5
+2022 Mar 12      95          12          4
+2022 Mar 13      93           8          3
+2022 Mar 14      95           5          2
+2022 Mar 15      95           8          3
+2022 Mar 16      93           5          2
+2022 Mar 17      95           5          2
+2022 Mar 18      95          10          3
+2022 Mar 19      95          15          5
+
+
+==========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2022 Apr 18 0229 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2022-04-18
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2022 Apr 18     135          12          4
+2022 Apr 19     130          10          3
+2022 Apr 20     130          10          3
+2022 Apr 21     130           8          3
+2022 Apr 22     135           8          3
+2022 Apr 23     130          12          4
+2022 Apr 24     130           8          3
+2022 Apr 25     135           5          2
+2022 Apr 26     132           5          2
+2022 Apr 27     132           5          2
+2022 Apr 28     132           5          2
+2022 Apr 29     125          18          5
+2022 Apr 30     125          12          4
+2022 May 01     130           8          3
+2022 May 02     130           5          2
+2022 May 03     130           5          2
+2022 May 04     130           5          2
+2022 May 05     125           5          2
+2022 May 06     130           8          3
+2022 May 07     130          15          4
+2022 May 08     128          12          4
+2022 May 09     130           8          3
+2022 May 10     130           5          2
+2022 May 11     135           5          2
+2022 May 12     135           5          2
+2022 May 13     140           8          3
+2022 May 14     140          10          3
+
+
+==========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2022 May 16 0228 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2022-05-16
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2022 May 16     154          14          4
+2022 May 17     152           8          3
+2022 May 18     152           5          2
+2022 May 19     150           8          3
+2022 May 20     148           8          3
+2022 May 21     140           5          2
+2022 May 22     140           5          2
+2022 May 23     145           5          2
+2022 May 24     142          18          5
+2022 May 25     142          15          4
+2022 May 26     138          15          4
+2022 May 27     136          15          4
+2022 May 28     136           8          3
+2022 May 29     138           5          2
+2022 May 30     140           5          2
+2022 May 31     140           5          2
+2022 Jun 01     143           5          2
+2022 Jun 02     143           5          2
+2022 Jun 03     143           5          2
+2022 Jun 04     140           5          2
+2022 Jun 05     136           5          2
+2022 Jun 06     138           5          2
+2022 Jun 07     138           5          2
+2022 Jun 08     140           5          2
+2022 Jun 09     150           5          2
+2022 Jun 10     154           8          3
+2022 Jun 11     154          14          4
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2022 Jul 04 0139 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2022-07-04
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2022 Jul 04     110           5          2
+2022 Jul 05     112           8          3
+2022 Jul 06     112          25          5
+2022 Jul 07     115          12          4
+2022 Jul 08     115           8          3
+2022 Jul 09     115           5          2
+2022 Jul 10     115           5          2
+2022 Jul 11     112           5          2
+2022 Jul 12     112           5          2
+2022 Jul 13     110           5          2
+2022 Jul 14     108          10          3
+2022 Jul 15     108          15          4
+2022 Jul 16     110          12          4
+2022 Jul 17     100          10          3
+2022 Jul 18      95           8          3
+2022 Jul 19      98           8          3
+2022 Jul 20      95           8          3
+2022 Jul 21      95           8          3
+2022 Jul 22      98          12          4
+2022 Jul 23      98          15          4
+2022 Jul 24     100          10          3
+2022 Jul 25     100           8          3
+2022 Jul 26     102           5          2
+2022 Jul 27     105           5          2
+2022 Jul 28     105           5          2
+2022 Jul 29     100           5          2
+2022 Jul 30     110           5          2
+
+
+=========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2022 Aug 15 0229 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2022-08-15
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2022 Aug 15     124           5          2
+2022 Aug 16     124           5          2
+2022 Aug 17     122          20          5
+2022 Aug 18     118          25          5
+2022 Aug 19     112          18          4
+2022 Aug 20     108          12          4
+2022 Aug 21     102           8          3
+2022 Aug 22     100           5          2
+2022 Aug 23     100           5          2
+2022 Aug 24      94           5          2
+2022 Aug 25      94           5          2
+2022 Aug 26      94           5          2
+2022 Aug 27      94          12          4
+2022 Aug 28      96           8          3
+2022 Aug 29      98           8          3
+2022 Aug 30     100           8          3
+2022 Aug 31     108           5          2
+2022 Sep 01     114           5          2
+2022 Sep 02     116           5          2
+2022 Sep 03     116          24          6
+2022 Sep 04     112          28          6
+2022 Sep 05     108          18          5
+2022 Sep 06     108          10          3
+2022 Sep 07     115          14          4
+2022 Sep 08     120           8          3
+2022 Sep 09     124          10          3
+2022 Sep 10     126           8          3
+
+
+==========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2022 Aug 29 0154 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2022-08-29
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2022 Aug 29     125          10          3
+2022 Aug 30     120           8          3
+2022 Aug 31     120           5          2
+2022 Sep 01     120           5          2
+2022 Sep 02     115           5          2
+2022 Sep 03     115          30          6
+2022 Sep 04     115          38          6
+2022 Sep 05     112          20          5
+2022 Sep 06     108          15          4
+2022 Sep 07     108          18          4
+2022 Sep 08     115          10          3
+2022 Sep 09     120          12          4
+2022 Sep 10     124           8          3
+2022 Sep 11     130           5          2
+2022 Sep 12     128           5          2
+2022 Sep 13     120          12          4
+2022 Sep 14     118          15          4
+2022 Sep 15     105          10          3
+2022 Sep 16     102           8          3
+2022 Sep 17      98           8          3
+2022 Sep 18      98           5          2
+2022 Sep 19     104           5          2
+2022 Sep 20     102           5          2
+2022 Sep 21     108           5          2
+2022 Sep 22     118           5          2
+2022 Sep 23     118           5          2
+2022 Sep 24     118          14          3
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2022 Oct 17 1653 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2022-10-17
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2022 Oct 17     120          10          4
+2022 Oct 18     115           5          2
+2022 Oct 19     115           5          2
+2022 Oct 20     110          12          4
+2022 Oct 21     110          12          4
+2022 Oct 22     112           8          3
+2022 Oct 23     112           5          2
+2022 Oct 24     112           5          2
+2022 Oct 25     112           5          2
+2022 Oct 26     115          15          5
+2022 Oct 27     120          12          4
+2022 Oct 28     125          15          5
+2022 Oct 29     125          12          4
+2022 Oct 30     125          20          5
+2022 Oct 31     120          15          5
+2022 Nov 01     118          15          4
+2022 Nov 02     120          18          5
+2022 Nov 03     125          15          4
+2022 Nov 04     125          12          4
+2022 Nov 05     120          20          5
+2022 Nov 06     120           8          3
+2022 Nov 07     120           5          2
+2022 Nov 08     120           5          2
+2022 Nov 09     120           5          2
+2022 Nov 10     125          18          5
+2022 Nov 11     120          18          4
+2022 Nov 12     120          15          3
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2022 Nov 07 0624 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2022-11-07
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2022 Nov 07     130           8          3
+2022 Nov 08     130          12          4
+2022 Nov 09     125          12          4
+2022 Nov 10     120          12          4
+2022 Nov 11     115          12          4
+2022 Nov 12     115           8          3
+2022 Nov 13     120           5          2
+2022 Nov 14     118           5          2
+2022 Nov 15     116           5          2
+2022 Nov 16     115           5          2
+2022 Nov 17     114           5          2
+2022 Nov 18     116          25          5
+2022 Nov 19     116          15          4
+2022 Nov 20     114           8          3
+2022 Nov 21     114           5          2
+2022 Nov 22     112           5          2
+2022 Nov 23     114           8          3
+2022 Nov 24     116          16          4
+2022 Nov 25     116          26          5
+2022 Nov 26     116          15          4
+2022 Nov 27     118          12          3
+2022 Nov 28     118           8          3
+2022 Nov 29     120          15          4
+2022 Nov 30     122          26          5
+2022 Dec 01     124          16          4
+2022 Dec 02     124          12          3
+2022 Dec 03     122           8          3
+
+
+==========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2022 Nov 21 0654 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2022-11-21
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2022 Nov 21     120          26          5
+2022 Nov 22     125          15          4
+2022 Nov 23     125           8          3
+2022 Nov 24     125          10          3
+2022 Nov 25     125          15          4
+2022 Nov 26     125           8          3
+2022 Nov 27     125          10          3
+2022 Nov 28     120           8          3
+2022 Nov 29     120           8          3
+2022 Nov 30     120           8          3
+2022 Dec 01     120          12          4
+2022 Dec 02     120          18          4
+2022 Dec 03     120           8          3
+2022 Dec 04     120           5          2
+2022 Dec 05     125           5          2
+2022 Dec 06     125           5          2
+2022 Dec 07     125           5          2
+2022 Dec 08     125           8          3
+2022 Dec 09     125           8          3
+2022 Dec 10     125           5          2
+2022 Dec 11     130           5          2
+2022 Dec 12     135           5          2
+2022 Dec 13     130           5          2
+2022 Dec 14     125           5          2
+2022 Dec 15     125           5          2
+2022 Dec 16     125           5          2
+2022 Dec 17     125          10          3
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2022 Dec 12 0123 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2022-12-12
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2022 Dec 12     145           5          2
+2022 Dec 13     140           5          2
+2022 Dec 14     130           5          2
+2022 Dec 15     125           5          2
+2022 Dec 16     120           5          2
+2022 Dec 17     115           5          2
+2022 Dec 18     115           5          2
+2022 Dec 19     115          10          3
+2022 Dec 20     115          10          3
+2022 Dec 21     115           5          2
+2022 Dec 22     115          20          5
+2022 Dec 23     120          15          4
+2022 Dec 24     120          12          4
+2022 Dec 25     120          20          5
+2022 Dec 26     120          20          5
+2022 Dec 27     120          20          5
+2022 Dec 28     120          20          5
+2022 Dec 29     125          12          4
+2022 Dec 30     130          10          3
+2022 Dec 31     135          12          4
+2023 Jan 01     145           8          3
+2023 Jan 02     145           5          2
+2023 Jan 03     145          18          5
+2023 Jan 04     145          10          3
+2023 Jan 05     145          10          3
+2023 Jan 06     145           8          3
+2023 Jan 07     145           5          2
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2023 Feb 27 0250 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2023-02-27
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2023 Feb 27     155          56          7
+2023 Feb 28     150          32          6
+2023 Mar 01     150          16          4
+2023 Mar 02     145          10          3
+2023 Mar 03     145           8          3
+2023 Mar 04     140           8          3
+2023 Mar 05     145          16          4
+2023 Mar 06     150          18          5
+2023 Mar 07     155          15          4
+2023 Mar 08     160           8          3
+2023 Mar 09     165           5          2
+2023 Mar 10     165           5          2
+2023 Mar 11     165           5          2
+2023 Mar 12     165           5          2
+2023 Mar 13     170           5          2
+2023 Mar 14     170           5          2
+2023 Mar 15     170          15          4
+2023 Mar 16     175           8          3
+2023 Mar 17     180           8          3
+2023 Mar 18     180           5          2
+2023 Mar 19     175           8          3
+2023 Mar 20     170          15          3
+2023 Mar 21     165           5          2
+2023 Mar 22     160           5          2
+2023 Mar 23     160           5          2
+2023 Mar 24     155          12          3
+2023 Mar 25     155          16          4
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2023 Mar 06 0303 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2023-03-06
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2023 Mar 06     185          20          5
+2023 Mar 07     190          16          4
+2023 Mar 08     200           8          3
+2023 Mar 09     200           5          2
+2023 Mar 10     195           5          2
+2023 Mar 11     190           5          2
+2023 Mar 12     185           5          2
+2023 Mar 13     180           5          2
+2023 Mar 14     175           5          2
+2023 Mar 15     170          16          4
+2023 Mar 16     175           8          3
+2023 Mar 17     175           8          3
+2023 Mar 18     180           5          2
+2023 Mar 19     180           8          3
+2023 Mar 20     175          16          4
+2023 Mar 21     170           5          2
+2023 Mar 22     170           5          2
+2023 Mar 23     170           5          2
+2023 Mar 24     175          12          3
+2023 Mar 25     175          16          4
+2023 Mar 26     180          26          5
+2023 Mar 27     185          18          4
+2023 Mar 28     185          10          3
+2023 Mar 29     190           8          3
+2023 Mar 30     185          24          5
+2023 Mar 31     185          16          4
+2023 Apr 01     185          20          4
+
+
+==========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2023 Mar 27 0524 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2023-03-27
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2023 Mar 27     160           8          3
+2023 Mar 28     155           8          3
+2023 Mar 29     145           5          2
+2023 Mar 30     145           5          2
+2023 Mar 31     135          12          4
+2023 Apr 01     135          15          4
+2023 Apr 02     135          10          3
+2023 Apr 03     135           8          3
+2023 Apr 04     135           5          2
+2023 Apr 05     132           5          2
+2023 Apr 06     132           5          2
+2023 Apr 07     132           5          2
+2023 Apr 08     132           5          2
+2023 Apr 09     130           5          2
+2023 Apr 10     132          15          4
+2023 Apr 11     135          12          4
+2023 Apr 12     135           8          3
+2023 Apr 13     140           5          2
+2023 Apr 14     145           8          3
+2023 Apr 15     148           8          3
+2023 Apr 16     150          12          4
+2023 Apr 17     150          10          3
+2023 Apr 18     155          15          4
+2023 Apr 19     155           5          2
+2023 Apr 20     158          20          5
+2023 Apr 21     160          15          5
+2023 Apr 22     160          10          3
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2023 Apr 24 0342 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2023-04-24
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2023 Apr 24     135          47          8
+2023 Apr 25     130          15          5
+2023 Apr 26     125           8          3
+2023 Apr 27     120          10          3
+2023 Apr 28     120          15          4
+2023 Apr 29     125          10          3
+2023 Apr 30     130           8          3
+2023 May 01     135          12          3
+2023 May 02     140          10          3
+2023 May 03     140           8          3
+2023 May 04     140           8          3
+2023 May 05     140           5          2
+2023 May 06     140           5          2
+2023 May 07     145          12          3
+2023 May 08     150           5          2
+2023 May 09     155           5          2
+2023 May 10     160           5          2
+2023 May 11     165           8          3
+2023 May 12     170           8          3
+2023 May 13     170           5          2
+2023 May 14     165           5          2
+2023 May 15     160           5          2
+2023 May 16     155           5          2
+2023 May 17     150           5          2
+2023 May 18     145           5          2
+2023 May 19     140           5          2
+2023 May 20     135           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2023 Jun 19 0506 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2023-06-19
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2023 Jun 19     160          12          4
+2023 Jun 20     155          12          4
+2023 Jun 21     160          12          4
+2023 Jun 22     160          12          4
+2023 Jun 23     165           5          2
+2023 Jun 24     165           5          2
+2023 Jun 25     165           5          2
+2023 Jun 26     165           5          2
+2023 Jun 27     165          12          4
+2023 Jun 28     170          12          4
+2023 Jun 29     175           5          2
+2023 Jun 30     175           5          2
+2023 Jul 01     175          12          4
+2023 Jul 02     180           8          3
+2023 Jul 03     180           5          2
+2023 Jul 04     175           5          2
+2023 Jul 05     175           5          2
+2023 Jul 06     170           5          2
+2023 Jul 07     170           5          2
+2023 Jul 08     170          12          4
+2023 Jul 09     170           5          2
+2023 Jul 10     170           5          2
+2023 Jul 11     165           5          2
+2023 Jul 12     160          20          5
+2023 Jul 13     160          30          6
+2023 Jul 14     165           8          3
+2023 Jul 15     165           8          3
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2023 Jul 17 0708 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2023-07-17
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2023 Jul 17     180          18          5
+2023 Jul 18     182          25          5
+2023 Jul 19     178          15          4
+2023 Jul 20     170          10          3
+2023 Jul 21     172           8          3
+2023 Jul 22     172           5          2
+2023 Jul 23     170           5          2
+2023 Jul 24     160           5          2
+2023 Jul 25     160           5          2
+2023 Jul 26     160           5          2
+2023 Jul 27     160           5          2
+2023 Jul 28     165           5          2
+2023 Jul 29     165           5          2
+2023 Jul 30     170           5          2
+2023 Jul 31     170           5          2
+2023 Aug 01     165           5          2
+2023 Aug 02     165           5          2
+2023 Aug 03     165          10          3
+2023 Aug 04     165           8          3
+2023 Aug 05     170           5          2
+2023 Aug 06     175           5          2
+2023 Aug 07     180           5          2
+2023 Aug 08     180           5          2
+2023 Aug 09     180           5          2
+2023 Aug 10     180           5          2
+2023 Aug 11     175           5          2
+2023 Aug 12     175           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2023 Sep 25 0237 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2023-09-25
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2023 Sep 25     172          22          6
+2023 Sep 26     168          15          4
+2023 Sep 27     164           5          2
+2023 Sep 28     160           5          2
+2023 Sep 29     160           5          2
+2023 Sep 30     158           5          2
+2023 Oct 01     150           5          2
+2023 Oct 02     145           5          2
+2023 Oct 03     150           5          2
+2023 Oct 04     155           5          2
+2023 Oct 05     155           5          2
+2023 Oct 06     155           5          2
+2023 Oct 07     160           5          2
+2023 Oct 08     160           5          2
+2023 Oct 09     155           5          2
+2023 Oct 10     150           5          2
+2023 Oct 11     150           5          2
+2023 Oct 12     145           5          2
+2023 Oct 13     145           5          2
+2023 Oct 14     145           5          2
+2023 Oct 15     150           5          2
+2023 Oct 16     155           5          2
+2023 Oct 17     155           5          2
+2023 Oct 18     160           5          2
+2023 Oct 19     165           5          2
+2023 Oct 20     168           5          2
+2023 Oct 21     168           5          2
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2023 Oct 23 0151 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2023-10-23
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2023 Oct 23     120          10          3
+2023 Oct 24     125           8          3
+2023 Oct 25     130           6          2
+2023 Oct 26     135           5          2
+2023 Oct 27     135          12          4
+2023 Oct 28     135           8          3
+2023 Oct 29     140           8          3
+2023 Oct 30     140           8          3
+2023 Oct 31     142          10          3
+2023 Nov 01     142          12          4
+2023 Nov 02     142           5          2
+2023 Nov 03     144           5          2
+2023 Nov 04     144           5          2
+2023 Nov 05     144           5          2
+2023 Nov 06     140           5          2
+2023 Nov 07     138           5          2
+2023 Nov 08     136           5          2
+2023 Nov 09     136          12          4
+2023 Nov 10     138           8          3
+2023 Nov 11     136           5          2
+2023 Nov 12     134           5          2
+2023 Nov 13     130           5          2
+2023 Nov 14     130           8          3
+2023 Nov 15     130          10          3
+2023 Nov 16     125           5          2
+2023 Nov 17     123           5          2
+2023 Nov 18     120           5          2
+
+
+=========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2023 Nov 20 0128 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2023-11-20
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2023 Nov 20     140          20          5
+2023 Nov 21     145          10          3
+2023 Nov 22     145          15          4
+2023 Nov 23     145          12          4
+2023 Nov 24     145           8          3
+2023 Nov 25     145           8          3
+2023 Nov 26     145           5          2
+2023 Nov 27     148           8          3
+2023 Nov 28     152           8          3
+2023 Nov 29     152           5          2
+2023 Nov 30     155           5          2
+2023 Dec 01     155           5          2
+2023 Dec 02     152           5          2
+2023 Dec 03     150           5          2
+2023 Dec 04     148          10          3
+2023 Dec 05     145          16          5
+2023 Dec 06     140          12          4
+2023 Dec 07     140          10          3
+2023 Dec 08     140           5          2
+2023 Dec 09     145           5          2
+2023 Dec 10     145           5          2
+2023 Dec 11     140           5          2
+2023 Dec 12     140          10          3
+2023 Dec 13     140           8          3
+2023 Dec 14     140           5          2
+2023 Dec 15     140           5          2
+2023 Dec 16     140           5          2
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2023 Nov 27 0200 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2023-11-27
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2023 Nov 27     180          10          4
+2023 Nov 28     180           8          3
+2023 Nov 29     175           5          2
+2023 Nov 30     175           5          2
+2023 Dec 01     170           5          2
+2023 Dec 02     165           5          2
+2023 Dec 03     160           5          2
+2023 Dec 04     150          10          4
+2023 Dec 05     145          16          5
+2023 Dec 06     140          12          4
+2023 Dec 07     140          10          4
+2023 Dec 08     140           5          2
+2023 Dec 09     145           5          2
+2023 Dec 10     145           5          2
+2023 Dec 11     140           5          2
+2023 Dec 12     140          10          4
+2023 Dec 13     140           8          3
+2023 Dec 14     140           5          2
+2023 Dec 15     140           5          2
+2023 Dec 16     140           5          2
+2023 Dec 17     150           5          2
+2023 Dec 18     160          15          4
+2023 Dec 19     160          25          5
+2023 Dec 20     160           8          3
+2023 Dec 21     160           5          2
+2023 Dec 22     160          20          5
+2023 Dec 23     160          10          4
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2024 Jan 08 0221 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2024-01-08
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2024 Jan 08     165          10          3
+2024 Jan 09     165           8          3
+2024 Jan 10     165           5          2
+2024 Jan 11     170           5          2
+2024 Jan 12     165           5          2
+2024 Jan 13     165           5          2
+2024 Jan 14     165           5          2
+2024 Jan 15     160           5          2
+2024 Jan 16     165           5          2
+2024 Jan 17     160           5          2
+2024 Jan 18     155           5          2
+2024 Jan 19     150           5          2
+2024 Jan 20     150           5          2
+2024 Jan 21     150           5          2
+2024 Jan 22     145           5          2
+2024 Jan 23     140           5          2
+2024 Jan 24     135           5          2
+2024 Jan 25     135           5          2
+2024 Jan 26     135           5          2
+2024 Jan 27     130           5          2
+2024 Jan 28     135           8          3
+2024 Jan 29     140           8          3
+2024 Jan 30     140           8          3
+2024 Jan 31     140           5          2
+2024 Feb 01     150           5          2
+2024 Feb 02     160           5          2
+2024 Feb 03     165           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2024 Feb 26 0223 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2024-02-26
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2024 Feb 26     180          12          3
+2024 Feb 27     175          10          3
+2024 Feb 28     175          10          3
+2024 Feb 29     180           5          2
+2024 Mar 01     175           5          2
+2024 Mar 02     170           5          2
+2024 Mar 03     170           5          2
+2024 Mar 04     172           5          2
+2024 Mar 05     172           5          2
+2024 Mar 06     170           5          2
+2024 Mar 07     165           5          2
+2024 Mar 08     165           5          2
+2024 Mar 09     165           5          2
+2024 Mar 10     168           5          2
+2024 Mar 11     165           5          2
+2024 Mar 12     165           5          2
+2024 Mar 13     160           5          2
+2024 Mar 14     160           5          2
+2024 Mar 15     168           5          2
+2024 Mar 16     172           5          2
+2024 Mar 17     175           5          2
+2024 Mar 18     175           5          2
+2024 Mar 19     178           5          2
+2024 Mar 20     180           5          2
+2024 Mar 21     180           5          2
+2024 Mar 22     180           5          2
+2024 Mar 23     180           5          2
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2024 May 06 0628 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2024-05-06
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2024 May 06     180          35          6
+2024 May 07     185          12          4
+2024 May 08     190           8          3
+2024 May 09     185          10          3
+2024 May 10     175           5          2
+2024 May 11     175           5          2
+2024 May 12     175           8          3
+2024 May 13     175          15          4
+2024 May 14     180          10          3
+2024 May 15     205           5          2
+2024 May 16     205           5          2
+2024 May 17     200           5          2
+2024 May 18     195           5          2
+2024 May 19     190           5          2
+2024 May 20     185           5          2
+2024 May 21     180           5          2
+2024 May 22     175           5          2
+2024 May 23     170           8          3
+2024 May 24     165          12          4
+2024 May 25     170           8          3
+2024 May 26     175           5          2
+2024 May 27     175          12          4
+2024 May 28     170           8          3
+2024 May 29     165           5          2
+2024 May 30     165           5          2
+2024 May 31     165           8          3
+2024 Jun 01     175          12          4
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2024 May 27 0142 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2024-05-27
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2024 May 27     155           8          3
+2024 May 28     155           8          3
+2024 May 29     155           5          2
+2024 May 30     155           5          2
+2024 May 31     165           5          2
+2024 Jun 01     165           5          2
+2024 Jun 02     165           5          2
+2024 Jun 03     175           5          2
+2024 Jun 04     175           5          2
+2024 Jun 05     190           5          2
+2024 Jun 06     200           5          2
+2024 Jun 07     210           5          2
+2024 Jun 08     200          10          3
+2024 Jun 09     195          12          4
+2024 Jun 10     190           8          3
+2024 Jun 11     185          12          4
+2024 Jun 12     180          10          3
+2024 Jun 13     170           5          2
+2024 Jun 14     170           5          2
+2024 Jun 15     170           5          2
+2024 Jun 16     170           5          2
+2024 Jun 17     170           5          2
+2024 Jun 18     170           5          2
+2024 Jun 19     170           5          2
+2024 Jun 20     170           5          2
+2024 Jun 21     170           5          2
+2024 Jun 22     165           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2024 Jun 10 0135 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2024-06-10
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2024 Jun 10     175          35          6
+2024 Jun 11     170          20          5
+2024 Jun 12     170          10          3
+2024 Jun 13     165           5          2
+2024 Jun 14     165           5          2
+2024 Jun 15     155           5          2
+2024 Jun 16     155           5          2
+2024 Jun 17     165           5          2
+2024 Jun 18     175           5          2
+2024 Jun 19     185           8          3
+2024 Jun 20     185           8          3
+2024 Jun 21     185           5          2
+2024 Jun 22     190           8          3
+2024 Jun 23     195           8          3
+2024 Jun 24     200           5          2
+2024 Jun 25     200           5          2
+2024 Jun 26     205           5          2
+2024 Jun 27     205           5          2
+2024 Jun 28     205           5          2
+2024 Jun 29     205           5          2
+2024 Jun 30     200           8          3
+2024 Jul 01     190           8          3
+2024 Jul 02     180           5          2
+2024 Jul 03     175           5          2
+2024 Jul 04     170           5          2
+2024 Jul 05     165           5          2
+2024 Jul 06     160           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2024 Jun 17 0203 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2024-06-17
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2024 Jun 17     175           8          3
+2024 Jun 18     180          15          4
+2024 Jun 19     180           8          3
+2024 Jun 20     180           8          3
+2024 Jun 21     175           5          2
+2024 Jun 22     175           8          3
+2024 Jun 23     190          10          3
+2024 Jun 24     190           5          2
+2024 Jun 25     180           5          2
+2024 Jun 26     175           5          2
+2024 Jun 27     180           5          2
+2024 Jun 28     190           5          2
+2024 Jun 29     180           5          2
+2024 Jun 30     185           8          3
+2024 Jul 01     190           8          3
+2024 Jul 02     195           5          2
+2024 Jul 03     190           5          2
+2024 Jul 04     185           5          2
+2024 Jul 05     190           5          2
+2024 Jul 06     180           5          2
+2024 Jul 07     180           5          2
+2024 Jul 08     165           5          2
+2024 Jul 09     165           5          2
+2024 Jul 10     180           5          2
+2024 Jul 11     170           5          2
+2024 Jul 12     170           5          2
+2024 Jul 13     170           5          2
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2024 Jul 29 0218 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2024-07-29
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2024 Jul 29     210          18          5
+2024 Jul 30     210          72          7
+2024 Jul 31     210          35          6
+2024 Aug 01     210          10          3
+2024 Aug 02     190           5          2
+2024 Aug 03     190           5          2
+2024 Aug 04     190           5          2
+2024 Aug 05     180           5          2
+2024 Aug 06     180           5          2
+2024 Aug 07     185           5          2
+2024 Aug 08     185           5          2
+2024 Aug 09     190           5          2
+2024 Aug 10     190           5          2
+2024 Aug 11     190           5          2
+2024 Aug 12     195           5          2
+2024 Aug 13     195           5          2
+2024 Aug 14     190           5          2
+2024 Aug 15     190           5          2
+2024 Aug 16     190           5          2
+2024 Aug 17     190           5          2
+2024 Aug 18     185           5          2
+2024 Aug 19     180           5          2
+2024 Aug 20     180           5          2
+2024 Aug 21     180           5          2
+2024 Aug 22     180          10          3
+2024 Aug 23     180           8          3
+2024 Aug 24     180           5          2
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2024 Sep 09 0157 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2024-09-09
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2024 Sep 09     225          10          3
+2024 Sep 10     225          30          6
+2024 Sep 11     220          22          5
+2024 Sep 12     220           8          3
+2024 Sep 13     225           5          2
+2024 Sep 14     225           5          2
+2024 Sep 15     220           5          2
+2024 Sep 16     215           5          2
+2024 Sep 17     210           8          3
+2024 Sep 18     210           8          3
+2024 Sep 19     215           5          2
+2024 Sep 20     225           5          2
+2024 Sep 21     225           5          2
+2024 Sep 22     220           5          2
+2024 Sep 23     225           5          2
+2024 Sep 24     225           5          2
+2024 Sep 25     230           5          2
+2024 Sep 26     235          25          5
+2024 Sep 27     230          25          5
+2024 Sep 28     225          15          4
+2024 Sep 29     240          10          3
+2024 Sep 30     240           5          2
+2024 Oct 01     240           5          2
+2024 Oct 02     240           5          2
+2024 Oct 03     230           5          2
+2024 Oct 04     220           5          2
+2024 Oct 05     220          10          3
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2024 Sep 30 0122 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2024-09-30
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2024 Sep 30     200          10          4
+2024 Oct 01     200           5          2
+2024 Oct 02     200           5          2
+2024 Oct 03     205           5          2
+2024 Oct 04     205           5          2
+2024 Oct 05     205          10          4
+2024 Oct 06     205          10          4
+2024 Oct 07     205           5          2
+2024 Oct 08     205           5          2
+2024 Oct 09     200           5          2
+2024 Oct 10     185          10          4
+2024 Oct 11     175          20          5
+2024 Oct 12     175          19          5
+2024 Oct 13     175           5          2
+2024 Oct 14     175           5          2
+2024 Oct 15     175           5          2
+2024 Oct 16     175           5          2
+2024 Oct 17     170           5          2
+2024 Oct 18     170           5          2
+2024 Oct 19     170           5          2
+2024 Oct 20     170           5          2
+2024 Oct 21     170           5          2
+2024 Oct 22     175          28          5
+2024 Oct 23     180          10          3
+2024 Oct 24     185           5          2
+2024 Oct 25     190           5          2
+2024 Oct 26     195           5          2
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2024 Oct 07 0341 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2024-10-07
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2024 Oct 07     265          28          5
+2024 Oct 08     260          12          4
+2024 Oct 09     255           5          2
+2024 Oct 10     250           5          2
+2024 Oct 11     240           5          2
+2024 Oct 12     235           8          3
+2024 Oct 13     230           5          2
+2024 Oct 14     175           5          2
+2024 Oct 15     175           5          2
+2024 Oct 16     175           5          2
+2024 Oct 17     170           5          2
+2024 Oct 18     170           5          2
+2024 Oct 19     170           5          2
+2024 Oct 20     170           5          2
+2024 Oct 21     170           5          2
+2024 Oct 22     175          15          4
+2024 Oct 23     180          10          3
+2024 Oct 24     185           5          2
+2024 Oct 25     190           5          2
+2024 Oct 26     195          12          4
+2024 Oct 27     215           8          3
+2024 Oct 28     230           5          2
+2024 Oct 29     240           5          2
+2024 Oct 30     250           5          2
+2024 Oct 31     225           5          2
+2024 Nov 01     230           5          2
+2024 Nov 02     215           5          2
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2024 Nov 25 0218 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2024-11-25
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2024 Nov 25     205           5          2
+2024 Nov 26     210           5          2
+2024 Nov 27     210           5          2
+2024 Nov 28     210           5          2
+2024 Nov 29     210           8          3
+2024 Nov 30     205           8          3
+2024 Dec 01     205           5          2
+2024 Dec 02     205           5          2
+2024 Dec 03     205           5          2
+2024 Dec 04     205           7          2
+2024 Dec 05     205           5          2
+2024 Dec 06     210          12          4
+2024 Dec 07     215          12          4
+2024 Dec 08     220          10          3
+2024 Dec 09     215           5          2
+2024 Dec 10     215           5          2
+2024 Dec 11     215          10          3
+2024 Dec 12     215          15          3
+2024 Dec 13     210          10          3
+2024 Dec 14     215           8          3
+2024 Dec 15     215           5          2
+2024 Dec 16     215           8          3
+2024 Dec 17     215           8          3
+2024 Dec 18     220           8          3
+2024 Dec 19     215          12          3
+2024 Dec 20     205           8          3
+2024 Dec 21     205           5          2
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2024 Dec 16 0207 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2024-12-16
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2024 Dec 16     170           8          3
+2024 Dec 17     165           5          2
+2024 Dec 18     165           5          2
+2024 Dec 19     170           5          2
+2024 Dec 20     170           5          2
+2024 Dec 21     175           5          2
+2024 Dec 22     175           5          2
+2024 Dec 23     180           5          2
+2024 Dec 24     180           5          2
+2024 Dec 25     180           5          2
+2024 Dec 26     180           5          2
+2024 Dec 27     180           5          2
+2024 Dec 28     185           5          2
+2024 Dec 29     185           5          2
+2024 Dec 30     180           5          2
+2024 Dec 31     180           5          2
+2025 Jan 01     180           5          2
+2025 Jan 02     180           5          2
+2025 Jan 03     175           5          2
+2025 Jan 04     175           5          2
+2025 Jan 05     170          15          4
+2025 Jan 06     170           8          3
+2025 Jan 07     160           5          2
+2025 Jan 08     160           5          2
+2025 Jan 09     165           5          2
+2025 Jan 10     170          12          4
+2025 Jan 11     165          10          3
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2025 Jan 13 0208 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2025-01-13
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2025 Jan 13     150           6          2
+2025 Jan 14     145           8          3
+2025 Jan 15     145          10          3
+2025 Jan 16     145           6          2
+2025 Jan 17     150           8          3
+2025 Jan 18     155          10          3
+2025 Jan 19     155           8          3
+2025 Jan 20     160           8          3
+2025 Jan 21     160           5          2
+2025 Jan 22     165           5          2
+2025 Jan 23     165           5          2
+2025 Jan 24     165           5          2
+2025 Jan 25     170           5          2
+2025 Jan 26     170           5          2
+2025 Jan 27     175           5          2
+2025 Jan 28     175           5          2
+2025 Jan 29     170           5          2
+2025 Jan 30     170           5          2
+2025 Jan 31     165          20          5
+2025 Feb 01     160          20          5
+2025 Feb 02     155          20          5
+2025 Feb 03     155          15          4
+2025 Feb 04     150          12          4
+2025 Feb 05     150          12          4
+2025 Feb 06     150          10          3
+2025 Feb 07     145           5          2
+2025 Feb 08     145           5          2
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2025 Feb 03 0137 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2025-02-03
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2025 Feb 03     215          14          3
+2025 Feb 04     215          18          4
+2025 Feb 05     215           8          3
+2025 Feb 06     215          10          3
+2025 Feb 07     210           5          2
+2025 Feb 08     210           5          2
+2025 Feb 09     200           5          2
+2025 Feb 10     200          10          3
+2025 Feb 11     195          15          3
+2025 Feb 12     195          15          4
+2025 Feb 13     195          20          5
+2025 Feb 14     190          10          3
+2025 Feb 15     180          15          4
+2025 Feb 16     180          20          4
+2025 Feb 17     185          10          3
+2025 Feb 18     185          10          3
+2025 Feb 19     180          10          3
+2025 Feb 20     180           5          2
+2025 Feb 21     175           5          2
+2025 Feb 22     185           5          2
+2025 Feb 23     190           5          2
+2025 Feb 24     190           5          2
+2025 Feb 25     185           5          2
+2025 Feb 26     185           5          2
+2025 Feb 27     195          10          3
+2025 Feb 28     205          25          5
+2025 Mar 01     210          25          5
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2025 Feb 24 0214 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2025-02-24
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2025 Feb 24     210           8          3
+2025 Feb 25     210           8          3
+2025 Feb 26     210           6          2
+2025 Feb 27     200          10          3
+2025 Feb 28     195          12          4
+2025 Mar 01     195          10          3
+2025 Mar 02     190           8          3
+2025 Mar 03     190           5          2
+2025 Mar 04     190           5          2
+2025 Mar 05     190           5          2
+2025 Mar 06     185           5          2
+2025 Mar 07     180          10          3
+2025 Mar 08     170          10          3
+2025 Mar 09     160          25          5
+2025 Mar 10     155          15          3
+2025 Mar 11     160          15          3
+2025 Mar 12     170          25          5
+2025 Mar 13     180          30          5
+2025 Mar 14     185          30          5
+2025 Mar 15     185          20          4
+2025 Mar 16     185          18          4
+2025 Mar 17     180          15          3
+2025 Mar 18     180          20          4
+2025 Mar 19     185           8          3
+2025 Mar 20     190           5          2
+2025 Mar 21     195           5          2
+2025 Mar 22     200           5          2
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2025 Mar 17 0140 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2025-03-17
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2025 Mar 17     180          12          4
+2025 Mar 18     180          15          4
+2025 Mar 19     185          10          3
+2025 Mar 20     190          10          3
+2025 Mar 21     195           8          3
+2025 Mar 22     200           5          2
+2025 Mar 23     195           5          2
+2025 Mar 24     190           5          2
+2025 Mar 25     180          15          4
+2025 Mar 26     165          25          5
+2025 Mar 27     160          25          5
+2025 Mar 28     150          15          4
+2025 Mar 29     150           5          2
+2025 Mar 30     160           5          2
+2025 Mar 31     160           5          2
+2025 Apr 01     160           5          2
+2025 Apr 02     150           5          2
+2025 Apr 03     150          10          3
+2025 Apr 04     155          20          5
+2025 Apr 05     160          35          6
+2025 Apr 06     160          10          3
+2025 Apr 07     160          12          4
+2025 Apr 08     165          35          6
+2025 Apr 09     175          40          6
+2025 Apr 10     180          25          5
+2025 Apr 11     180          20          5
+2025 Apr 12     185          10          3
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2025 Mar 31 0225 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2025-03-31
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2025 Mar 31     170           5          2
+2025 Apr 01     175           5          2
+2025 Apr 02     175           5          2
+2025 Apr 03     175          10          3
+2025 Apr 04     180          20          5
+2025 Apr 05     180          35          6
+2025 Apr 06     180          10          3
+2025 Apr 07     185          12          3
+2025 Apr 08     185          30          5
+2025 Apr 09     180          35          6
+2025 Apr 10     175          25          5
+2025 Apr 11     175          18          4
+2025 Apr 12     175          10          3
+2025 Apr 13     175          15          4
+2025 Apr 14     170          12          3
+2025 Apr 15     170           8          3
+2025 Apr 16     175           5          2
+2025 Apr 17     175          10          3
+2025 Apr 18     175          12          3
+2025 Apr 19     170           8          3
+2025 Apr 20     170          10          3
+2025 Apr 21     165          15          4
+2025 Apr 22     165          15          4
+2025 Apr 23     170          15          4
+2025 Apr 24     170          15          4
+2025 Apr 25     165          10          3
+2025 Apr 26     165           8          3
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2025 Apr 21 0125 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2025-04-21
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2025 Apr 21     160          12          4
+2025 Apr 22     165          35          6
+2025 Apr 23     165          35          6
+2025 Apr 24     165          25          5
+2025 Apr 25     165          18          5
+2025 Apr 26     165           8          3
+2025 Apr 27     165           8          3
+2025 Apr 28     170           6          2
+2025 Apr 29     170           6          2
+2025 Apr 30     170           6          2
+2025 May 01     170          25          5
+2025 May 02     175          35          6
+2025 May 03     170          20          4
+2025 May 04     165          12          4
+2025 May 05     165          25          5
+2025 May 06     165          20          5
+2025 May 07     160          18          5
+2025 May 08     165          18          5
+2025 May 09     165          18          5
+2025 May 10     165          15          5
+2025 May 11     160          18          5
+2025 May 12     155           5          2
+2025 May 13     155           5          2
+2025 May 14     155           5          2
+2025 May 15     155           5          2
+2025 May 16     155          12          4
+2025 May 17     155          12          4
+
+
+===========================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2025 May 12 0245 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2025-05-12
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2025 May 12     125           8          5
+2025 May 13     120          12          4
+2025 May 14     120          10          3
+2025 May 15     115           5          2
+2025 May 16     115           5          2
+2025 May 17     115           5          2
+2025 May 18     115           8          3
+2025 May 19     120          10          4
+2025 May 20     125           8          3
+2025 May 21     125           8          3
+2025 May 22     125           6          2
+2025 May 23     130           6          2
+2025 May 24     130           6          2
+2025 May 25     130           5          2
+2025 May 26     135           5          2
+2025 May 27     140           8          3
+2025 May 28     140          25          5
+2025 May 29     140          30          5
+2025 May 30     140          20          5
+2025 May 31     140          20          5
+2025 Jun 01     145          20          5
+2025 Jun 02     145          12          4
+2025 Jun 03     145           8          3
+2025 Jun 04     145          10          4
+2025 Jun 05     140          12          4
+2025 Jun 06     130          10          4
+2025 Jun 07     125          10          4
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2025 Jun 02 0216 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2025-06-02
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2025 Jun 02     150          85          8
+2025 Jun 03     150          35          5
+2025 Jun 04     150          18          4
+2025 Jun 05     150          20          4
+2025 Jun 06     155          15          3
+2025 Jun 07     155          10          3
+2025 Jun 08     155           8          3
+2025 Jun 09     155           5          2
+2025 Jun 10     155          15          4
+2025 Jun 11     150          12          4
+2025 Jun 12     150          10          3
+2025 Jun 13     155          35          6
+2025 Jun 14     155          25          5
+2025 Jun 15     155          18          4
+2025 Jun 16     160          15          4
+2025 Jun 17     160          12          4
+2025 Jun 18     155          10          3
+2025 Jun 19     155           8          3
+2025 Jun 20     160           8          3
+2025 Jun 21     155           8          3
+2025 Jun 22     150           8          3
+2025 Jun 23     145          12          4
+2025 Jun 24     140          15          4
+2025 Jun 25     140          35          6
+2025 Jun 26     130          25          5
+2025 Jun 27     130          12          4
+2025 Jun 28     125           8          3
+
+
+============================================================================================================================================================================================
+
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2025 Jun 09 0153 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2025-06-09
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2025 Jun 09     115          22          5
+2025 Jun 10     115          12          4
+2025 Jun 11     115          12          4
+2025 Jun 12     120           8          3
+2025 Jun 13     120          15          4
+2025 Jun 14     120          32          6
+2025 Jun 15     118          22          5
+2025 Jun 16     120          15          4
+2025 Jun 17     120          12          4
+2025 Jun 18     125          10          3
+2025 Jun 19     130           8          3
+2025 Jun 20     130           8          3
+2025 Jun 21     130           8          3
+2025 Jun 22     125           8          3
+2025 Jun 23     125          12          4
+2025 Jun 24     125          15          4
+2025 Jun 25     130          35          6
+2025 Jun 26     125          25          5
+2025 Jun 27     125          12          4
+2025 Jun 28     120           8          3
+2025 Jun 29     115           6          3
+2025 Jun 30     115           6          3
+2025 Jul 01     115          10          3
+2025 Jul 02     110          12          4
+2025 Jul 03     110           8          3
+2025 Jul 04     110           5          2
+2025 Jul 05     115           5          2
+
+
+===========================================================================================================================================================================================
+
+cd "C:\Users\Mohd Muntajibuddin\OneDrive\Desktop\twenty7-forecast\backend"
+@'
+:Product: 27-day Space Weather Outlook Table 27DO.txt
+:Issued: 2025 Oct 06 0234 UTC
+# Prepared by the US Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Product description and SWPC contact on the Web
+# https://www.swpc.noaa.gov/content/subscription-services
+#
+#      27-day Space Weather Outlook Table
+#                Issued 2025-10-06
+#
+#   UTC      Radio Flux   Planetary   Largest
+#  Date       10.7 cm      A Index    Kp Index
+2025 Oct 06     150          15          4
+2025 Oct 07     155          18          5
+2025 Oct 08     150          15          4
+2025 Oct 09     140           5          2
+2025 Oct 10     145           5          2
+2025 Oct 11     140          15          5
+2025 Oct 12     135          12          4
+2025 Oct 13     135          10          3
+2025 Oct 14     140           8          3
+2025 Oct 15     135           5          2
+2025 Oct 16     140           5          2
+2025 Oct 17     145           5          2
+2025 Oct 18     145           5          2
+2025 Oct 19     140          12          4
+2025 Oct 20     135          15          5
+2025 Oct 21     140          10          3
+2025 Oct 22     145           8          3
+2025 Oct 23     145           5          2
+2025 Oct 24     140           5          2
+2025 Oct 25     145          12          4
+2025 Oct 26     145          12          4
+2025 Oct 27     140           8          3
+2025 Oct 28     140          15          4
+2025 Oct 29     140          35          6
+2025 Oct 30     135          25          5
+2025 Oct 31     135          15          4
+2025 Nov 01     130           8          3
+'@ | Set-Content .\raw\27DO_2025-10-06.txt

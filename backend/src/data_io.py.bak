@@ -1,0 +1,166 @@
+# backend/src/data_io.py
+from pathlib import Path
+import pandas as pd
+from typing import List, Tuple, Optional
+
+# Feature/target templates (order matters!)
+FEATURE_TEMPLATE: List[str] = [
+    *(f"f107_d{i}" for i in range(1, 28)),
+    *(f"ap_d{i}"   for i in range(1, 28)),
+]
+TARGET_TEMPLATE: List[str] = [f"kp_d{i}" for i in range(1, 28)]
+
+
+def _ensure_cols(df: pd.DataFrame, cols: List[str], fill: Optional[float] = 0.0, dtype: str = "float32") -> pd.DataFrame:
+    """
+    Ensure all `cols` exist in df, but avoid using physical-zeros as a blind fill.
+    - If `fill` is not None (e.g. training pipeline explicitly provides fill=0.0),
+      missing values will be filled with that value (backwards compatible).
+    - If `fill` is None, we will:
+        * create missing columns as NaN,
+        * coerce to numeric,
+        * perform row-wise forward/back fill (axis=1),
+        * apply per-column sensible fallbacks if still missing (e.g. F10.7 -> 128),
+        * then cast dtype.
+
+    Additional fixes:
+    - Treat literal 0.0 for f107 and ap columns as missing (converted to NaN) so we don't
+      accidentally feed zero into the model.
+    - ap fallback: if a matching 'kp_dN' column exists in the original df row, compute
+      ap = max(5.0, kp * 20) as a reasonable fallback (matches examples you provided).
+    """
+    # create a working copy to avoid mutating original
+    df_local = df.copy()
+
+    # add missing columns as NA (do not inject numeric zeros)
+    for c in cols:
+        if c not in df_local.columns:
+            df_local[c] = pd.NA
+
+    # keep requested order and coerce to numeric
+    out = df_local[cols].copy()
+    out = out.apply(pd.to_numeric, errors="coerce")
+
+    if fill is None:
+        # Row-wise forward then backward fill so we use neighboring day values first
+        # axis=1 does ffill/bfill across columns in the same row
+        out = out.fillna(method="ffill", axis=1).fillna(method="bfill", axis=1)
+
+        # If any column remains entirely missing for this row, apply sensible per-column fallback
+        # (Prefer domain-aware constants over 0)
+        for c in out.columns:
+            if out[c].isna().all():
+                # heuristic fallback: f107 -> 128 (midpoint in requested 120..138),
+                # ap -> 20 (safe quiet), else 0.0
+                name = c.lower()
+                if "f107" in name:
+                    out[c] = out[c].fillna(128.0)
+                elif name.startswith("ap_") or name.startswith("apd") or "ap_" in name or name.startswith("apd"):
+                    out[c] = out[c].fillna(20.0)
+                else:
+                    out[c] = out[c].fillna(0.0)
+
+        # ---- Special handling: treat zeros in F10.7 / ap as missing and fill with domain fallbacks ----
+        # Replace explicit zeros (which often indicate missing in your data) for f107 and ap with NaN
+        for c in out.columns:
+            name = c.lower()
+            if "f107" in name:
+                # treat 0.0 as missing
+                out.loc[out[c] == 0.0, c] = pd.NA
+            if name.startswith("ap_") or name.startswith("apd") or "ap_" in name:
+                out.loc[out[c] == 0.0, c] = pd.NA
+
+        # For AP columns attempt to infer using kp if present in original dataframe.
+        # e.g., if df_local contains 'kp_d3' then ap_d3 = max(5.0, kp_d3 * 20)
+        for c in out.columns:
+            name = c.lower()
+            if name.startswith("ap_d"):
+                # extract index number N from 'ap_dN'
+                try:
+                    parts = name.split("ap_d")
+                    if len(parts) == 2 and parts[1].isdigit():
+                        n = int(parts[1])
+                        kp_col = f"kp_d{n}"
+                        if kp_col in df_local.columns:
+                            # coerce kp column to numeric, then compute fallback where ap is NaN
+                            kp_series = pd.to_numeric(df_local[kp_col], errors="coerce").fillna(0.0)
+                            # create fallback series
+                            fallback = kp_series.apply(lambda kv: max(5.0, float(kv) * 20.0) if (kv is not None and not pd.isna(kv) and kv != 0.0) else 20.0)
+                            out[c] = out[c].fillna(fallback)
+                        else:
+                            # no kp column available: set safe default
+                            out[c] = out[c].fillna(20.0)
+                    else:
+                        out[c] = out[c].fillna(20.0)
+                except Exception:
+                    out[c] = out[c].fillna(20.0)
+
+        # For f107 columns fill remaining NaNs with 128.0 (midpoint of requested 120..138)
+        for c in out.columns:
+            if "f107" in c.lower():
+                out[c] = out[c].fillna(128.0)
+
+        # final safety: any remaining NaNs -> 0.0 (should be rare after domain fallbacks)
+        out = out.fillna(0.0)
+
+    else:
+        # Backwards-compatible behaviour: fill missing with provided numeric value
+        out = out.fillna(fill)
+
+    # enforce dtype
+    out = out.astype(dtype)
+    return out
+
+
+def load_training_csv(path: str) -> Tuple[pd.DataFrame, pd.DataFrame, List[str], List[str]]:
+    """
+    Reads the training CSV at `path` and returns:
+      X_df (features), y_df (targets), feature_cols, target_cols
+
+    - Features: f107_d1..d27, ap_d1..d27 (numeric, float32)
+    - Targets:  kp_d1..kp_d27 (numeric, float32), forward/back-filled across row, then clipped
+    """
+    p = Path(path)
+    if not p.exists():
+        raise FileNotFoundError(f"Training CSV not found at {p}")
+
+    df = pd.read_csv(p)
+    if df.empty:
+        raise ValueError(f"Training CSV is empty at {p}")
+
+    # For training we can keep previous behaviour (explicit numeric fill)
+    X_df = _ensure_cols(df, FEATURE_TEMPLATE, fill=0.0, dtype="float32")
+
+    # Targets: enforce columns, then forward/back fill across rows to patch gaps
+    y_raw = _ensure_cols(df, TARGET_TEMPLATE, fill=pd.NA, dtype="float32")
+    # y_raw initially may contain NaN; fill across rows (ffill/bfill) then fill remaining with 0
+    y_df = y_raw.ffill(axis=0).bfill(axis=0).fillna(0.0)
+
+    # Kp physical range guard (0..9); keeps MSE normalization meaningful
+    y_df = y_df.clip(lower=0.0, upper=9.0).astype("float32")
+
+    return X_df, y_df, FEATURE_TEMPLATE, TARGET_TEMPLATE
+
+
+def load_features_csv(path: str, feature_cols: List[str]) -> pd.DataFrame:
+    """
+    Load features_today.csv (or similar). Guarantees:
+    - required feature columns exist and are ordered
+    - numeric float32 dtype
+    - at least one row (uses the FIRST row by convention)
+
+    We use fill=None to allow domain-aware imputation rather than blind zeros.
+    """
+    p = Path(path)
+    if not p.exists():
+        raise FileNotFoundError(f"Features CSV not found at {p}")
+
+    df = pd.read_csv(p)
+    if df.empty:
+        raise ValueError(f"Features CSV is empty at {p}")
+
+    # Use domain-aware imputation (fill=None) to avoid injecting zeros for F10.7
+    out = _ensure_cols(df, list(feature_cols), fill=None, dtype="float32")
+
+    # If multiple rows exist, we use the first row as the active feature window
+    return out.iloc[:1].copy()

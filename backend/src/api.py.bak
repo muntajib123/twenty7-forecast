@@ -1,0 +1,560 @@
+# backend/src/api.py
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+import os
+import json
+from pathlib import Path
+from datetime import datetime, timedelta
+import pandas as pd
+import math
+import traceback
+import numpy as np
+
+from .config import (
+    DATA_PATH,
+    FEATURES_TODAY_PATH,
+    MODEL_DIR,
+    MODEL_FILE,
+    SCALER_FILE,
+)
+from .trainer import train_and_eval
+from .model import load_artifacts
+from .data_io import load_training_csv, load_features_csv
+from .service import Store
+from .schemas import TrainResponse, PredictResponse, PostFeaturesRequest
+from .features import dict_to_feature_df
+from .scheduler import run_pipeline, sync_noaa_27day
+from .features_today import rebuild_features_today
+from .forecaster import generate_27day_forecast  # robust forecaster
+
+# OPTIONAL: needed for /predict/beyond
+try:
+    from .feature_extend import build_extended_feature_row
+    _HAS_BEYOND = True
+except Exception:
+    _HAS_BEYOND = False
+
+# NOAA fetcher (optional)
+try:
+    from .noaa import get_live_payload as fetch_noaa_27day
+    _HAS_NOAA = True
+except Exception:
+    _HAS_NOAA = False
+
+
+app = FastAPI(title="27-Day Forecast API", version="1.4.1")
+
+# ---------------- CORS ----------------
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+store = Store()
+
+# ---------------- Helpers ----------------
+def _is_stale(path: str, minutes: int = 180) -> bool:
+    p = Path(path)
+    if not p.exists():
+        return True
+    mtime = datetime.fromtimestamp(p.stat().st_mtime)
+    return (datetime.now() - mtime) > timedelta(minutes=minutes)
+
+
+def _unpack_loaded(loaded):
+    """
+    Accept either (scaler, model) or (model, scaler) and return (scaler, model).
+    """
+    if isinstance(loaded, tuple) and len(loaded) == 2:
+        a, b = loaded
+        # prefer to detect scaler by presence of .transform, model by .predict
+        if hasattr(a, "transform") and hasattr(b, "predict"):
+            return a, b
+        if hasattr(b, "transform") and hasattr(a, "predict"):
+            return b, a
+        # fallback: assume (scaler, model)
+        return a, b
+    raise RuntimeError("load_artifacts returned unexpected object; expected a 2-tuple")
+
+
+def _sanitize_list_of_numbers(arr):
+    out = []
+    for v in arr:
+        try:
+            vf = float(v)
+            if math.isnan(vf) or math.isinf(vf):
+                out.append(None)
+            else:
+                out.append(vf)
+        except Exception:
+            out.append(None)
+    return out
+
+
+def _clean_kp_series(kp_list):
+    """
+    Input: iterable of numbers or None
+    Output: list of cleaned numbers (int when close to integer; else 3 decimals)
+    """
+    out = []
+    for v in kp_list:
+        try:
+            if v is None:
+                out.append(None)
+                continue
+            fv = float(v)
+            if math.isnan(fv) or math.isinf(fv):
+                out.append(None)
+                continue
+            # clip to physical KP range
+            clipped = max(0.0, min(9.0, fv))
+            nearest = round(clipped)
+            # if within 0.02 of exact integer -> return integer
+            if abs(clipped - nearest) < 0.02:
+                out.append(int(nearest))
+            else:
+                out.append(round(float(clipped), 3))
+        except Exception:
+            out.append(None)
+    return out
+
+
+# ---------------- Utility: robust loader/predictor ----------------
+def _predict_from_df(features_df: pd.DataFrame, feature_cols):
+    """
+    Robust wrapper around load_artifacts + scaler.transform + model.predict.
+
+    Returns: list of sanitized floats (length = horizon).
+    Raises HTTPException on failure.
+
+    Sanitizes numeric results, clips into physical range [0,9], and applies user-friendly rounding:
+      - if value is within 0.02 of an integer -> round to that integer
+      - otherwise round to 3 decimal places
+    None is used when the value is NaN or infinite.
+    """
+    try:
+        if not os.path.exists(MODEL_FILE) or not os.path.exists(SCALER_FILE):
+            raise HTTPException(status_code=400, detail="Model not trained yet.")
+
+        loaded = load_artifacts(MODEL_FILE, SCALER_FILE)
+        scaler_obj, model_obj = _unpack_loaded(loaded)
+
+        # Debug prints (helpful in logs)
+        print("[debug] _predict_from_df: model type:", type(model_obj))
+        print("[debug] _predict_from_df: scaler type:", type(scaler_obj))
+        print("[debug] _predict_from_df: features_df.shape:", features_df.shape)
+        print("[debug] _predict_from_df: feature_cols len:", len(feature_cols))
+
+        # ensure required feature columns exist
+        for c in feature_cols:
+            if c not in features_df.columns:
+                raise HTTPException(status_code=400, detail=f"Missing feature column: {c}")
+
+        Xvals = features_df[feature_cols].values.astype(float)
+        print("[debug] Xvals sample:", Xvals[:1])
+
+        # transform features
+        Xs = scaler_obj.transform(Xvals)
+        print("[debug] Xs.shape after scaler.transform:", Xs.shape)
+
+        pred = model_obj.predict(Xs)
+        # convert to numpy array
+        try:
+            pred = np.asarray(pred)
+        except Exception:
+            pred = __import__("numpy").array(pred)
+        print("[debug] raw model.predict shape:", pred.shape)
+
+        # Flatten sensible prediction into a 1D list
+        if pred.ndim == 2 and pred.shape[0] >= 1:
+            # If model returned (1, N) -> take [0]
+            if pred.shape[0] == 1:
+                out = pred[0].tolist()
+            else:
+                # If multiple rows predicted, choose first row
+                out = pred[0].tolist()
+        elif pred.ndim == 1:
+            out = pred.tolist()
+        else:
+            # try to flatten sensibly
+            out = pred.reshape(-1).tolist()
+
+        # Sanitize numeric and apply user-friendly rounding/clipping:
+        sanitized = []
+        for i, v in enumerate(out):
+            try:
+                vf = float(v)
+                if math.isnan(vf) or math.isinf(vf):
+                    sanitized.append(None)
+                    continue
+                # Clip to physical KP range
+                clipped = max(0.0, min(9.0, vf))
+                # Round to integer if very close to integer
+                nearest_int = round(clipped)
+                if abs(clipped - nearest_int) < 0.02:
+                    sanitized.append(int(nearest_int))
+                else:
+                    sanitized.append(round(float(clipped), 3))
+            except Exception:
+                sanitized.append(None)
+
+        print("[debug] prediction (sanitized):", sanitized[:10])
+        return sanitized
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        print("[error] _predict_from_df failed:", e)
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"_predict_from_df failed: {str(e)}")
+
+
+# ---------------- STARTUP ----------------
+@app.on_event("startup")
+def startup_bootstrap():
+    os.makedirs(MODEL_DIR, exist_ok=True)
+
+
+# ---------------- ROOT ----------------
+@app.get("/")
+def root():
+    return {"status": "API is running", "message": "Use /api/health or other endpoints"}
+
+
+# ---------------- HEALTH ----------------
+@app.get("/api/health")
+def health():
+    return {"status": "ok"}
+
+
+# ---------------- TRAIN ----------------
+@app.post("/api/train", response_model=TrainResponse)
+def train():
+    try:
+        meta = train_and_eval(DATA_PATH, MODEL_FILE, SCALER_FILE)
+        store.save_run({"event": "train", **meta})
+        return meta
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ---------------- FEATURES: REBUILD ----------------
+@app.post("/api/features/rebuild")
+def features_rebuild():
+    try:
+        summary = rebuild_features_today(write_training=True)
+        return {"status": "ok", **summary}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ---------------- PREDICT TODAY ----------------
+@app.get("/api/predict/today", response_model=PredictResponse)
+def predict_today():
+    try:
+        # If features stale, refresh NOAA/features and pipeline
+        if _is_stale(FEATURES_TODAY_PATH, minutes=180):
+            try:
+                sync_noaa_27day()
+            except Exception:
+                pass
+            try:
+                rebuild_features_today(write_training=True)
+            except Exception:
+                pass
+            run_pipeline()
+
+        # Load features
+        X, _, feature_cols, _ = load_training_csv(DATA_PATH)
+        features_df = load_features_csv(FEATURES_TODAY_PATH, feature_cols)
+
+        # Raw prediction from model
+        h_raw = _predict_from_df(features_df, feature_cols)
+
+        # Safe-normalize horizon: numeric floats or None
+        horizon = _sanitize_list_of_numbers(h_raw)
+        horizon = _clean_kp_series(horizon)
+
+        # Compute normalized MSE vs NOAA forecast (if available)
+        mse_norm_str = ""
+        try:
+            noaa = store.get_latest_noaa_27day()
+            if noaa and isinstance(noaa.get("days"), list):
+                noaa_kp = []
+                for d in noaa["days"]:
+                    try:
+                        kpv = d.get("kp") if isinstance(d, dict) else None
+                        noaa_kp.append(None if kpv is None else float(kpv))
+                    except Exception:
+                        noaa_kp.append(None)
+
+                y_true = []
+                y_pred = []
+                n = min(len(noaa_kp), len(horizon))
+                for i in range(n):
+                    if (noaa_kp[i] is not None) and (horizon[i] is not None):
+                        y_true.append(noaa_kp[i])
+                        y_pred.append(horizon[i])
+
+                if len(y_true) > 0:
+                    from sklearn.metrics import mean_squared_error
+                    raw = mean_squared_error(y_true, y_pred)
+                    mse_norm = raw / (9.0 ** 2)  # normalize by 81
+                    mse_norm_str = f"{float(mse_norm):.6f}"
+        except Exception:
+            mse_norm_str = ""
+
+        meta = {
+            "source": "features_today.csv",
+            "features_meta": json.dumps(features_df.iloc[0].to_dict()),
+            "generated_utc": datetime.utcnow().isoformat(),
+            "features_mtime": datetime.fromtimestamp(Path(FEATURES_TODAY_PATH).stat().st_mtime).isoformat(),
+            "mse": mse_norm_str,
+        }
+
+        store.save_predictions(meta, horizon)
+
+        return {
+            "horizon": horizon,
+            "feature_row": features_df.iloc[0].to_dict(),
+            "meta": meta,
+        }
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ---------------- PREDICT WITH BODY ----------------
+@app.post("/api/predict", response_model=PredictResponse)
+def predict_with_body(req: PostFeaturesRequest):
+    try:
+        X, _, feature_cols, _ = load_training_csv(DATA_PATH)
+        features_df = dict_to_feature_df(req.features, feature_cols)
+        h_raw = _predict_from_df(features_df, feature_cols)
+
+        horizon = _sanitize_list_of_numbers(h_raw)
+        horizon = _clean_kp_series(horizon)
+
+        meta = {
+            "source": "POST",
+            "generated_utc": datetime.utcnow().isoformat(),
+        }
+
+        store.save_predictions(meta, horizon)
+        return {
+            "horizon": horizon,
+            "feature_row": features_df.iloc[0].to_dict(),
+            "meta": meta,
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ---------------- LATEST PREDICTION ----------------
+@app.get("/api/predictions/latest")
+def latest_saved_prediction():
+    doc = store.get_latest_prediction()
+    if not doc:
+        raise HTTPException(status_code=404, detail="No prediction found.")
+    return doc
+
+
+# ---------------- NOAA: ALWAYS AVAILABLE ----------------
+@app.get("/api/noaa/27day/latest")
+def get_noaa_27day_latest():
+    doc = store.get_latest_noaa_27day()
+    if not doc:
+        raise HTTPException(status_code=404, detail="No NOAA forecast found.")
+    return doc
+
+
+@app.get("/api/noaa/27day/live")
+def get_noaa_27day_live():
+    if _HAS_NOAA:
+        try:
+            return fetch_noaa_27day()
+        except Exception:
+            pass
+    doc = store.get_latest_noaa_27day()
+    if not doc:
+        raise HTTPException(status_code=404, detail="No NOAA forecast available.")
+    return doc
+
+
+# ---------------- CRON MANUAL ----------------
+@app.post("/api/cron/run-now")
+def cron_run_now():
+    try:
+        sync_noaa_27day()
+        summary = rebuild_features_today(write_training=True)
+        out = run_pipeline()
+        return {"status": "ok", "features": summary, "pipeline": out}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ---------------- PREDICT BEYOND ----------------
+@app.get("/api/predict/beyond")
+def predict_beyond(mode: str = "mean7", offset_days: int = 27):
+    """
+    Predict a 27-day Kp horizon beyond the available NOAA days using the model,
+    and also return the corresponding Ap and F10.7 series produced by the
+    feature extender so the frontend can display them.
+
+    This implementation uses generate_27day_forecast(...) to produce a robust KP
+    horizon and uses the extender for AP / F10.7 values (days 28..54 -> target).
+    """
+    if not _HAS_BEYOND:
+        raise HTTPException(status_code=400, detail="feature_extend.py missing.")
+    try:
+        # load training metadata / feature columns and today's features
+        X, _, feature_cols, _ = load_training_csv(DATA_PATH)
+        features_df = load_features_csv(FEATURES_TODAY_PATH, feature_cols)
+        base_row = features_df.iloc[0].to_dict()
+
+        # Build full 54-day extended feature DataFrame (f107_d1..f107_d54, ap_d1..ap_d54)
+        ext_df = build_extended_feature_row(base_row, mode=mode)
+
+        # Build ap_horizon and f107_horizon from days 28..54 (i.e. indices 28..54)
+        ap_horizon = []
+        f107_horizon = []
+        for i in range(28, 55):  # 28..54 inclusive
+            fkey = f"f107_d{i}"
+            akey = f"ap_d{i}"
+            fval = None
+            aval = None
+            try:
+                if fkey in ext_df.columns:
+                    fval = ext_df.at[0, fkey]
+            except Exception:
+                fval = None
+            try:
+                if akey in ext_df.columns:
+                    aval = ext_df.at[0, akey]
+            except Exception:
+                aval = None
+
+            # prefer None if missing so downstream can decide fallback
+            f107_horizon.append(float(fval) if (fval is not None and not pd.isna(fval)) else None)
+            ap_horizon.append(float(aval) if (aval is not None and not pd.isna(aval)) else None)
+
+        # Build remap row for the model: f107_d1..f107_d27 and ap_d1..ap_d27 must match feature_cols
+        remap = {}
+        for i in range(1, 28):
+            fkey_src = f"f107_d{i}"
+            akey_src = f"ap_d{i}"
+            try:
+                fval_src = ext_df.at[0, fkey_src] if fkey_src in ext_df.columns else None
+            except Exception:
+                fval_src = None
+            try:
+                aval_src = ext_df.at[0, akey_src] if akey_src in ext_df.columns else None
+            except Exception:
+                aval_src = None
+
+            # fallback: use None (we will let load/ensure funcs decide imputation), but set to pd.NA to preserve dtype
+            remap[f"f107_d{i}"] = None if (fval_src is None or pd.isna(fval_src)) else float(fval_src)
+            remap[f"ap_d{i}"]   = None if (aval_src is None or pd.isna(aval_src)) else float(aval_src)
+
+        remap_df = pd.DataFrame([remap])
+        # Reindex to feature_cols and let load_features_csv/_ensure_cols do domain-aware filling if needed
+        remap_df = remap_df.reindex(columns=feature_cols)
+
+        # Use the forecaster (robust) to generate KP horizon
+        try:
+            kp_df = generate_27day_forecast(remap_df, MODEL_FILE, SCALER_FILE, feature_cols, horizon=27)
+            # ensure kp_df has 'kp'
+            if "kp" in kp_df.columns:
+                raw_kp = kp_df["kp"].tolist()
+            else:
+                # fallback: try 'pred_value' or first numeric column
+                numeric_cols = [c for c in kp_df.columns if c != "day"]
+                raw_kp = kp_df[numeric_cols[0]].tolist() if numeric_cols else [None] * 27
+        except Exception as e:
+            # If forecaster failed for any reason, fallback to the previous raw_predict path
+            print("[predict_beyond] generate_27day_forecast failed:", e)
+            traceback.print_exc()
+            # attempt to call _predict_from_df on remap_df as last resort
+            try:
+                raw_pred = _predict_from_df(remap_df.fillna(0.0), feature_cols)
+                raw_kp = raw_pred[:27]
+            except Exception as e2:
+                print("[predict_beyond] fallback _predict_from_df also failed:", e2)
+                raw_kp = [None] * 27
+
+        # sanitize/round KP
+        horizon = _clean_kp_series(_sanitize_list_of_numbers(raw_kp))
+
+        # clean up ap/f107 horizon lists to length 27 and round floats
+        def normalize_series(lst):
+            out = []
+            for v in (lst or []):
+                try:
+                    if v is None or pd.isna(v):
+                        out.append(None)
+                    else:
+                        out.append(round(float(v), 3))
+                except Exception:
+                    out.append(None)
+            # ensure exactly 27 entries
+            if len(out) < 27:
+                out = (out + [None] * 27)[:27]
+            else:
+                out = out[:27]
+            return out
+
+        ap_horizon = normalize_series(ap_horizon)
+        f107_horizon = normalize_series(f107_horizon)
+
+        # final fallback: if ap/f107 are None, try to use last-known NOAA values
+        try:
+            doc = store.get_latest_noaa_27day()
+            noaa_days = doc["days"] if doc and isinstance(doc.get("days"), list) else None
+        except Exception:
+            noaa_days = None
+
+        for i in range(27):
+            if ap_horizon[i] is None:
+                try:
+                    if noaa_days and len(noaa_days) >= 27:
+                        aval = noaa_days[27 + i].get("ap") if (27 + i) < len(noaa_days) else None
+                        ap_horizon[i] = round(float(aval), 3) if aval is not None else None
+                except Exception:
+                    ap_horizon[i] = ap_horizon[i]
+            if f107_horizon[i] is None:
+                try:
+                    if noaa_days and len(noaa_days) >= 27:
+                        fval = noaa_days[27 + i].get("f107") if (27 + i) < len(noaa_days) else None
+                        f107_horizon[i] = round(float(fval), 3) if fval is not None else None
+                except Exception:
+                    f107_horizon[i] = f107_horizon[i]
+
+        # final date range
+        try:
+            doc2 = store.get_latest_noaa_27day()
+            last_date = doc2["days"][26]["date_utc"].replace("Z", "+00:00")
+            start = datetime.fromisoformat(last_date).date() + timedelta(days=1)
+        except Exception:
+            start = datetime.utcnow().date() + timedelta(days=offset_days)
+
+        dates = [(start + timedelta(days=i)).isoformat() for i in range(27)]
+
+        return {
+            "mode": mode,
+            "offset_days": offset_days,
+            "dates_utc": dates,
+            "horizon": horizon,
+            "ap_horizon": ap_horizon,
+            "f107_horizon": f107_horizon,
+            "meta": {"generated_utc": datetime.utcnow().isoformat()},
+        }
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        print("[predict_beyond] unexpected error:", e)
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))

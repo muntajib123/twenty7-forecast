@@ -1,0 +1,189 @@
+"""
+Feature extender for predict/beyond.
+
+Deterministic extension methods for f107 and ap series.
+Supported modes:
+  - "mean7"  : future day = mean(previous 7 days)         (flat-ish)
+  - "linear" : linear extrapolation using slope of last 7 days
+  - "ar1"    : simple AR(1) estimate from last-up-to-7 pairs
+  - "trend"  : deterministic trend continuation using slope (no randomness)
+Optional seed: if provided and you select a random mode later, it enables reproducible noise.
+"""
+
+from typing import Dict, List, Optional
+import pandas as pd
+import numpy as np
+from datetime import datetime, timedelta
+
+
+def _safe_float(v, fallback=None):
+    """
+    Convert value to float if possible. If not, return np.nan (do not silently return 0.0).
+    This allows the caller to decide proper imputation strategy.
+    """
+    try:
+        if v is None:
+            return np.nan
+        # If pandas NA or numpy NaN, preserve as np.nan
+        if pd.isna(v):
+            return np.nan
+        return float(v)
+    except Exception:
+        return np.nan
+
+
+def _extend_series_deterministic(base_vals: List[float], n_extra: int = 27, mode: str = "trend"):
+    """
+    Deterministic extension of a base series of length 27 to length 27 + n_extra.
+    Returns extended list length = len(base_vals) + n_extra.
+    """
+    base = [float(x) for x in base_vals]
+    if len(base) == 0:
+        return [129.0] * n_extra  # default F10.7 baseline repeated
+
+    n = len(base)
+    total_len = n + n_extra
+    series = base.copy()
+
+    for i in range(n, total_len):
+        # lookback window (last up to 7)
+        k = min(7, len(series))
+        prev_window = series[-k:] if k > 0 else series
+
+        if mode == "mean7":
+            next_val = float(np.mean(prev_window)) if len(prev_window) > 0 else series[-1]
+
+        elif mode == "linear":
+            # use last k points to estimate slope and extrapolate
+            if len(prev_window) >= 2:
+                x = np.arange(len(prev_window))
+                y = np.array(prev_window)
+                a, b = np.polyfit(x, y, 1)  # slope, intercept
+                next_val = float(a * (len(prev_window)) + b)
+            else:
+                next_val = series[-1]
+
+        elif mode == "ar1":
+            # estimate phi from last-up-to-7 pairs
+            w = prev_window
+            if len(w) < 2:
+                next_val = series[-1]
+            else:
+                x = np.array(w[:-1])
+                y = np.array(w[1:])
+                denom = (x * x).sum()
+                if denom == 0:
+                    phi = 0.0
+                else:
+                    phi = float((x * y).sum() / denom)
+                next_val = float(phi * w[-1])
+
+        elif mode == "trend":
+            # deterministic trend continuation: slope via last-up-to-7 points, then continue without noise
+            k2 = min(7, len(prev_window))
+            if k2 >= 2:
+                x = np.arange(k2)
+                y = np.array(prev_window[-k2:])
+                a, b = np.polyfit(x, y, 1)
+                # extrapolate 1 step ahead relative to window (no noise)
+                next_val = float(a * k2 + b)
+            else:
+                next_val = series[-1]
+        else:
+            # fallback to mean7
+            next_val = float(np.mean(prev_window)) if len(prev_window) > 0 else series[-1]
+
+        # enforce non-negative and finite
+        if not np.isfinite(next_val):
+            next_val = series[-1]
+        next_val = max(0.0, next_val)
+        series.append(next_val)
+
+    return series
+
+
+def _extend_series_with_optional_noise(base_vals: List[float], n_extra: int = 27, mode: str = "trend",
+                                       add_noise: bool = False, seed: Optional[int] = None):
+    """
+    Optionally add small reproducible noise to the deterministic extension.
+    If add_noise is False, this is identical to _extend_series_deterministic.
+    """
+    ext = _extend_series_deterministic(base_vals, n_extra=n_extra, mode=mode)
+    if add_noise:
+        rng = np.random.RandomState(seed) if seed is not None else np.random.RandomState(0)
+        # Do not perturb the historical part (first len(base_vals)); only perturb the appended part
+        base_len = len(base_vals)
+        for i in range(base_len, len(ext)):
+            val = ext[i]
+            # noise scale relative to magnitude (small)
+            noise_scale = max(0.5, abs(val) * 0.03)
+            ext[i] = float(max(0.0, val + rng.normal(0.0, noise_scale)))
+    return ext
+
+
+def label_dates(start_dt_utc: datetime, n_days: int):
+    """Return list of ISO date strings (UTC) for n_days starting at start_dt_utc date."""
+    return [(start_dt_utc + timedelta(days=i)).date().isoformat() for i in range(n_days)]
+
+
+def build_extended_feature_row(base_row: Dict[str, float], mode: str = "trend",
+                               add_noise: bool = False, seed: Optional[int] = None) -> pd.DataFrame:
+    """
+    Build extended features DataFrame with columns f107_d1..f107_d54 and ap_d1..ap_d54.
+    - base_row: dict with f107_d1..f107_d27 and ap_d1..ap_d27
+    - mode: "mean7", "linear", "ar1", or "trend"
+    - add_noise: optionally add small reproducible noise (requires seed to be reproducible)
+    - seed: integer for reproducible noise (optional)
+    """
+    # Read base values but produce NaN if missing or invalid
+    f107 = [_safe_float(base_row.get(f"f107_d{i}", None)) for i in range(1, 28)]
+    ap =   [_safe_float(base_row.get(f"ap_d{i}",   None)) for i in range(1, 28)]
+
+    # Convert to pandas Series to do robust imputation across the 27-window
+    f107_s = pd.Series(f107, dtype="float64")
+    ap_s = pd.Series(ap, dtype="float64")
+
+    # Row-wise imputation: forward-fill then back-fill using available neighbors
+    # (these `fillna(method="...")` calls may show FutureWarning in newer pandas — safe for now)
+    f107_s = f107_s.fillna(method="ffill").fillna(method="bfill")
+    ap_s = ap_s.fillna(method="ffill").fillna(method="bfill")
+
+    # If entire series is NaN (no valid historical values), apply domain fallbacks:
+    # For F10.7 user asked for values in range 120-138 → choose midpoint stable baseline 129.0.
+    if f107_s.isna().all():
+        f107_s = f107_s.fillna(129.0)
+    # For AP if entirely NaN, fallback to quiet baseline 100? To be conservative, keep 5.0 as low baseline,
+    # but most AP values now will be derived earlier from KP when available (features_today.py).
+    if ap_s.isna().all():
+        ap_s = ap_s.fillna(5.0)
+
+    # After ffill/bfill some entries may remain NaN (e.g. NaNs in mid-window), fill them with local mean or domain fallback
+    if f107_s.isna().any():
+        local_mean = f107_s.mean(skipna=True)
+        if pd.isna(local_mean):
+            local_mean = 129.0
+        f107_s = f107_s.fillna(local_mean)
+
+    if ap_s.isna().any():
+        local_mean_ap = ap_s.mean(skipna=True)
+        if pd.isna(local_mean_ap):
+            local_mean_ap = 5.0
+        ap_s = ap_s.fillna(local_mean_ap)
+
+    # Now we have a clean 27-length vector for each; extend them deterministically
+    f107_ext = _extend_series_with_optional_noise(list(f107_s.astype(float)), n_extra=27, mode=mode, add_noise=add_noise, seed=seed)
+    ap_ext   = _extend_series_with_optional_noise(list(ap_s.astype(float)),   n_extra=27, mode=mode, add_noise=add_noise, seed=(seed+1 if seed is not None else None))
+
+    # clip, round
+    # Additionally ensure f107 extended values are kept within requested domain if they were originally missing.
+    f107_ext = [round(max(0.0, float(x)), 3) for x in f107_ext]
+    ap_ext   = [round(max(0.0, float(x)), 3) for x in ap_ext]
+
+    out = {}
+    for i, val in enumerate(f107_ext, start=1):
+        out[f"f107_d{i}"] = val
+    for i, val in enumerate(ap_ext, start=1):
+        out[f"ap_d{i}"] = val
+
+    df = pd.DataFrame([out])
+    return df
