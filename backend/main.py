@@ -1,9 +1,18 @@
 # backend/main.py
+
 import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
 from src.api import app as api_app       # your main API endpoints
 from src.scheduler import start_scheduler
+
+# -------------------------------------------------------------
+# NEW: Health Check Endpoint for UptimeRobot (ALWAYS returns 200)
+# -------------------------------------------------------------
+@api_app.get("/api/health", include_in_schema=False)
+async def health_check():
+    return {"status": "ok"}
 
 # ---------------- NEW: import historical router ----------------
 try:
